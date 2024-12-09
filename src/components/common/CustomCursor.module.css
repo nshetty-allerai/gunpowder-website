@@ -1,0 +1,22 @@
+.customCursor {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    animation: cursorAnimation 0.3s ease;
+  }
+  
+  @keyframes cursorAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  #body {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAACoXK69AAAAJElEQVR42mNgoBfgP0NAYTBaFwYQAwgcQ0GEMBuwgIHDBAKXhAAAEelwQ4+bbiAAAAAElFTkSuQmCC), auto;
+    /* cursor: url('../../../public/svg/CustomeCursor.svg'), auto; */
+  }
+  

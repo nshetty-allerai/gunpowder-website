@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+
+
+:root {
+  --background: #000;
+  --foreground: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --foreground: #fff;
+    --brand:#FF0073;
+    /* --font-urbanist: "Urbanist", Helvetica, sans-serif; 
+    --font-afacad: "Afacad", Helvetica, sans-serif;  */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Urbanist", Helvetica, sans-serif;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .title{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FF0073;
+  }
+  .paragraph{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--foreground);
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .title{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #FF0073;
+  }
+  .paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--foreground);
+  }
+}
+@media only screen and (max-width: 767px)  {
+  .title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FF0073;
+  }
+  .paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--foreground);
+  }
+}
+
+
+
+/* .services-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #FF0073 #fff;
+}
+
+.services-scroll::-webkit-scrollbar {
+  height: 8px; 
+  border-radius: 4px; 
+}
+
+.services-scroll::-webkit-scrollbar-thumb {
+  background-color: #FF0073; 
+  border-radius: 4px; 
+}
+
+.services-scroll::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.scroll-for-all::-webkit-scrollbar {
+  height: 10px;
+  width: 496px;
+}
+
+.scroll-for-all::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.scroll-for-all::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #FF0073;
+} */
+
+.services-scroll {
+  overflow: auto; /* Ensure scrolling is enabled */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.services-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit browsers (Chrome, Safari, Edge) */
+}
+
+.scroll-for-all {
+  overflow: auto; /* Enable scrolling */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.scroll-for-all::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit browsers */
+}
+
+
+
+/* modal border radius */
+
+:where(.custom-modal-schedule-call-modal).ant-modal .ant-modal-content {
+  border-radius: 50px !important; 
+}
+:where(.custom-modal-schedule-calcom-modal).ant-modal .ant-modal-content {
+  border-radius: 20px !important; 
+}
