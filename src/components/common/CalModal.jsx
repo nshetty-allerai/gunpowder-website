@@ -68,7 +68,7 @@ const CalModal = ({open ,close}) => {
                     <div className="">
                         {isClient ? <Cal
                             namespace="demo"
-                            calLink="contact-us-ho6ezd/30min"
+                            calLink="muneeb-ahmed-qbur7v/30min"
                             style={{ width: "100%", height: "100%", overflow: "scroll"}}
                             config={{ layout: "month_view", theme: "dark" }}
                         /> : 'server '}
