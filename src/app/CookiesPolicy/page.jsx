@@ -40,7 +40,14 @@ const page = () => {
                         <p>For the purposes of this Cookies Policy:</p>
 
                         <ul className='mt-5'>
-                            <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>Company (referred to as either "the Company", "We", "Us" or "Our" in this Cookies Policy) refers to AllerAI Limited, 20 Market Hill, Southam, Warwickshire, United Kingdom, CV47 0HF.</li>
+                        <li
+                            className="paragraph mt-2"
+                            style={{ listStyleType: 'disc' }}
+                            >
+                            Company (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Cookies Policy)
+                            refers to AllerAI Limited, 20 Market Hill, Southam, Warwickshire, United Kingdom, CV47 0HF.
+                            </li>
+
                             <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>Cookies means small files that are placed on Your computer, mobile device or any other device by a website, containing details of your browsing history on that website among its many uses.</li>
                             <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>Website refers to Gunpowder Innovations, accessible from <Link className='text-brand underline' href='/'>www.gunpowderinnovations.com</Link></li>
                             <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>You means the individual accessing or using the Website, or a company, or any legal entity on behalf of which such individual is accessing or using the Website, as applicable.</li>
@@ -49,7 +56,10 @@ const page = () => {
                     <div>
                         <h6 className='title md:mt-10 md:mb-5 mt-8 mb-4'></h6>
                         <p className='paragraph mt-2 font-bold'>Type of Cookies We Use</p>
-                        <p className='paragraph mt-2'>Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser.</p>
+                        <p className="paragraph mt-2">
+                            Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser.
+                            </p>
+
                         <p className='paragraph mt-2'>We use both session and persistent Cookies for the purposes set out below:</p>
                     </div>
                     <div className='lg:mt-10 mt-6'>
@@ -121,7 +131,7 @@ const page = () => {
                             <p className='pragraph font-bold md:mt-10 mt-4'>Your Choices Regarding Cookies</p>
                             <p className='pragraph mt-4'>If You prefer to avoid the use of Cookies on the Website, first You must disable the use of Cookies in your browser and then delete the Cookies saved in your browser associated with this website. You may use this option for preventing the use of Cookies at any time. If You do not accept Our Cookies, You may experience some inconvenience in </p>
                             <p className='pragraph mt-2'>If You do not accept Our Cookies, You may experience some inconvenience in your use of the Website and some features may not function properly.</p>
-                            <p className='pragraph mt-2'>If You'd like to delete Cookies or instruct your web browser to delete or refuse Cookies, please visit the help pages of your web browser.</p>
+                            <p className='pragraph mt-2'>If You&apos;d like to delete Cookies or instruct your web browser to delete or refuse Cookies, please visit the help pages of your web browser.</p>
                         </div>
 
                         <ul className='mt-5 mx-4'>
@@ -130,7 +140,7 @@ const page = () => {
                             <li className='paragraph' style={{ listStyleType: 'disc' }}>For the Firefox web browser, please visit this page from Mozilla: <a className='text-brand' target='_blank' href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored"> https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored</a></li>
                             <li className='paragraph' style={{ listStyleType: 'disc' }}>For the Safari web browser, please visit this page from Apple:<a className='text-brand' target='_blank' href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac</a></li>
                         </ul>
-                        <p className='pragraph mt-4 mx-4'>For any other web browser, please visit your web browser's official web pages.</p>
+                        <p className='pragraph mt-4 mx-4'>For any other web browser, please visit your web browser&apos;s official web pages.</p>
 
                         <div className='mx-4'>
                             <p className='lg:py-4 py-2'>More Information about Cookies</p>
