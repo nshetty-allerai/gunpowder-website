@@ -23,6 +23,8 @@ const Footer = () => {
                     <div className='flex justify-center items-center gap-8'>
                         <Link className='text-center mt-4 md:mt-0' href='/contact'>Help</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/PrivacyPolicy'>Privacy</Link>
+                        <Link className='text-center mt-4 md:mt-0' href='/TermsAndConditions'>T&C</Link>
+                        <Link className='text-center mt-4 md:mt-0' href='/CookiesPolicy'>Cookies Policy</Link>
                     </div>
                 </div>
                 <div className='border-t border-t-[#EAECF0] mt-20 mb-12 '></div>
