@@ -26,8 +26,8 @@ const TeamMember = () => {
                     </div>
                 </div>
                 <div className='lg:w-[70%] w-full'>
-                    <p className='lg:text-4xl lg:leading-[56px] md:text-2xl text-xl text-center lg:text-start'>
-                        As a Product Designer, I ensure every design reflects the <span className='text-brand'>high-quality services</span> we offer. Our team is dedicated to creating user-focused solutions that exceed client expectations and drive results.
+                    <p className='lg:text-[28px] lg:leading-[44px] md:text-2xl text-xl text-center lg:text-start'>
+                        As a Product Designer, I ensure every design reflects the <span className='text-brand'>high-quality services</span> we offer. Our team is dedicated to creating user-focused solution that exceed client expectations and drive results.
                     </p>
                     <div className='mt-8 hidden lg:block'>
                         <p className='font-semibold text-lg'>— Sanket Atkari</p>

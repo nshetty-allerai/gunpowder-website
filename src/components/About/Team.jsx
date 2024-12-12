@@ -18,7 +18,7 @@ const Team = () => {
     return (
         <section className='max-w-[1440px] mx-auto w-full lg:py-[164px] py-[200px] relative bg-black'>
             <div className='max-w-[1041px] mx-auto'>
-                <h4 className='font-afacad text-center font-bold md:text-[40px] md:leading-[40px] text-3xl'>We have <span className='text-brand'>best team</span></h4>
+                <h4 className='font-afacad text-center font-bold md:text-[40px] md:leading-[40px] text-3xl'>We have the<span className='text-brand'> best team</span></h4>
                 <p className='md:text-lg text-base text-center md:max-w-[613px] mx-auto mt-4'>Our skilled team combines diverse expertise and creativity to deliver exceptional results on every project.</p>
                 <div className='flex flex-wrap justify-center md:gap-9 gap-[22px] max-w-[337px] md:max-w-[706px] lg:max-w-[1041px] mx-auto mt-14'>
                         {data.map((item,index)=>(<div key={index}><Card image={item}/></div>))}

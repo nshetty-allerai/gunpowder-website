@@ -46,7 +46,7 @@ const Cards = () => {
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Websites</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>E-commerce</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Self Service Portal</span>
-            <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Web Apps</span>
+            <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Web apps</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Healthcare</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>SaaS</span>
           </div>

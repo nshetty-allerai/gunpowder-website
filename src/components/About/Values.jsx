@@ -7,7 +7,7 @@ const Values = () => {
     <section className='max-w-[1440px] mx-auto pt-20 lg:pt-10'>
         <div>
             <h3 className='font-bold font-afacad text-[40px] leading-[46px] text-center'>Our Core <span className='text-brand'>Values</span></h3>
-            <p className='md:text-lg text-base text-center px-4 mt-4 mb-8 max-w-[633px] mx-auto'>We offer end-to-end services, from strategy and design to development and marketing, focused on bringing your vision to life and delivering impactful results.</p>
+            <p className='md:text-lg text-base text-center px-4 mt-4 mb-8 max-w-[633px] mx-auto'>Just some of the value that we bring into our partnership with you…            </p>
             <div className='flex flex-nowrap scroll-for-all mx-4 pb-8 md:mx-8 lg:mx-8 overflow-x-auto items-center gap-6 lg:grid grid-cols-2'>
             
             
@@ -25,7 +25,7 @@ const Values = () => {
                         </div>
                         <div className='md:w-[70%] w-[65%] my-auto md:pr-6 pr-4 ps-3'>
                             <h2 className='md:text-[32px] md:leading-[42px] text-2xl font-semibold'>Committed</h2>
-                            <p className='md:text-lg text-base mt-4'>We guarantee quality and on-time delivery, consistently meeting our promises every time.</p>
+                            <p className='md:text-lg text-base mt-4'>We provide quality and on-time delivery, consistently exceeding client expectations.</p>
                         </div>
                     </div>
                     <Image
@@ -76,7 +76,7 @@ const Values = () => {
                             />
                         </div>
                         <div className='md:w-[70%] w-[65%] my-auto md:pr-6 pr-4 ps-3'>
-                            <h2 className='md:text-[32px] md:leading-[42px] text-2xl font-semibold'>Transparent </h2>
+                            <h2 className='md:text-[32px] md:leading-[42px] text-2xl font-semibold'>Transparency</h2>
                             <p className='md:text-lg text-base mt-4'>Open communication and honesty are at the heart of every interaction we have.</p>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ const Values = () => {
                             />
                         </div>
                         <div className='md:w-[70%] w-[65%] my-auto md:pr-6 pr-4 ps-3'>
-                            <h2 className='md:text-[32px] md:leading-[42px] text-2xl font-semibold'>Collaborative</h2>
+                            <h2 className='md:text-[32px] md:leading-[42px] text-2xl font-semibold'>Collaboration</h2>
                             <p className='md:text-lg text-base mt-4'>We collaborate with you, not just for you, to achieve shared goals and mutual success.</p>
                         </div>
                     </div>

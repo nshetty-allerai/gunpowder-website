@@ -254,7 +254,7 @@ const cardData = [
     key: 1,
     planFor: 'Plan for',
     title: 'Design',
-    description: 'Best if you need ad-hoc design',
+    description: 'Best if you need design only requirements',
     questions: [
       'User research to high-fidelity design, we create custom solutions from scratch.',
       'End-to-end design process, ensuring seamless transitions from research to high-fidelity design.',
@@ -265,7 +265,7 @@ const cardData = [
     key: 2,
     planFor: 'Plan for',
     title: 'Development',
-    description: 'Best if you have regular design needs',
+    description: 'Best if you need development only requirements',
     questions: ['Full-stack development, delivering scalable and secure web and mobile solutions.', 'Seamless backend integration and API development for enhanced functionality.'],
     button: 'Plans starting at £1999',
   },
@@ -273,7 +273,7 @@ const cardData = [
     key: 3,
     planFor: 'Enterprise plan',
     title: 'Design & Development',
-    description: 'Want to develop whole app please contact',
+    description: 'Best if you have design & development requirements',
     questions: ['End-to-end design and development, from user research to high-fidelity design and robust coding.', 'Seamless integration of design and development for flawless functionality.'],
     button: 'Talk to us',
   },
@@ -282,15 +282,15 @@ const cardData = [
 const PlanDetailsData = [
   {
     key: 1,
-    questions: ['Dedicated Project Manager', 'Tailored Solutions aligned with your goals', 'Regular Updates throughout the process'],
+    questions: ['Dedicated Project Manager for seamless coordination. ', 'Tailored solutions aligned with your goals.', 'Regular updates throughout the process.'],
   },
   {
     key: 2,
-    questions: ['No Hidden Fees', 'Managed via Slack', 'Dedicated Project Manager'],
+    questions: ['No hidden fees for complete transparency.', 'Managed via Slack for efficient communication.', 'Streamlined workflow ensuring timely delivery.'],
   },
   {
     key: 3,
-    questions: [],
+    questions: ['Post-launch support for ongoing success.','Expert team delivering quality outcomes.','Scalable solutions for growing businesses.'],
   },
   {
     key: 4,
@@ -364,12 +364,12 @@ const Pricing = () => {
     <div className="relative max-w-[1440px] mx-auto">
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className='max-w-[1440px] mx-auto lg:mt-[90px] md:mt-[60px] mt-[50px] lg:mb-[40px] md:mb-[30px] mb-[20px]'>
+        <section className='max-w-[1440px] mx-auto lg:mt-[90px] md:mt-[120px] mt-[100px] lg:mb-[40px] md:mb-[30px] mb-[20px]'>
           <div className='flex items-center justify-between lg:px-14 px-6'>
             <div>
               <h3 className='font-semibold lg:text-[64px] lg:leading-[80px] md:text-5xl text-4xl font-afacad'>Pricing plans</h3>
-              <p className='lg:text-xl md:text-base text-lg md:mt-1 mt-4'>Simple, transparent pricing that grows with you. </p>
-              <h3 className='font-medium text-2xl md:text-[32px] md:leading-[50px] lg:text-5xl lg:mt-14 mt-8'>Plans that suits for the design works</h3>
+              <p className='lg:text-xl md:text-base text-lg md:mt-1 mt-4'>Simple, transparent pricing for whatever needs your business has</p>
+              {/* <h3 className='font-medium text-2xl md:text-[32px] md:leading-[50px] lg:text-5xl lg:mt-14 mt-8'>Plans that suits for the design works</h3> */}
             </div>
             <div className='hidden lg:block'>
               <Image
@@ -392,7 +392,7 @@ const Pricing = () => {
         <section className='max-w-[1440px] mx-auto lg:mt-[96px] md:mt-[50px] mt-8 mb-20 md:mb-0'>
           <div className='md:px-8 px-4'>
             <h3 className='lg:text-4xl mdtext-3xl text-2xl md:mb-10 mb-8'>What’s included in all plans</h3>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-6 py-8 md:gap-10 lg:bg-[#17012D40] md:bg-[#17012D8A] bg-[#17012db7] rounded-[19px] relative z-30'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 px-6 py-8 md:gap-8 lg:bg-[#17012D40] md:bg-[#17012D8A] bg-[#17012db7] rounded-[19px] relative z-30'>
               {planDetailsComponents}
             </div>
           </div>

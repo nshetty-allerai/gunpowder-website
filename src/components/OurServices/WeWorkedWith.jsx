@@ -6,12 +6,12 @@ const CardData = [
   {
     icon: Rocket,
     title: 'Pre-seed & <br/> Seed Startups',
-    description: 'Create a pitch deck, research your idea, conduct user interviews, and build an MVP.',
+    description: 'Provide pitch deck frameworks, create bespoke pitch decks, research your concept or product market, conduct user interviews and/or build an MVP',
   },
   {
     icon: Bulb,
     title: 'Startups <br/> that Scale',
-    description: 'Find your product-market fit, build a team with the right skill set, and scale quickly without compromising quality.',
+    description: 'From refining your pitches and MVP, to helping you find your product-market fit, building a team with the right skill set, and/or scale quickly without compromising quality.',
   },
   {
     icon: Building,

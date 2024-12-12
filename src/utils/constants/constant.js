@@ -182,8 +182,12 @@ import WhatsApp from '../../../public/svg/WhatsApp.svg'
 import Close from '../../../public/svg/Close.svg'
 import Cookies from '../../../public/svg/Cookies.svg'
 import CookiesIcon from '../../../public/svg/CookiesIcon.svg'
+import blackGradient from '../../../public/svg/blackGradient.svg'
+import blackGradientMobile from '../../../public/svg/blackGradientMobile.svg'
 import FounderImage from '../../../public/images/founder.png'
+import FounderMobileImage from '../../../public/images/founder mobile.png'
 export {
+    blackGradient,blackGradientMobile,
     Logo ,Menu ,Arrow ,HeroSectionImage ,BookedText ,Bom ,Hash ,Mobile ,
     Speaker ,Internet ,MVP ,Setting ,VideoImage,PurityaLogo ,AllerWellLogo ,ZugoLogo,
     ContactCard,VisionCard ,Inovation ,ProjectCard ,AimCard,ResultCard,
@@ -223,7 +227,7 @@ export {
     HomeDesktopGradient,AboutValue1,ValueSectionBackground,AboutValue2,AboutValue3,AboutValue4,AboutValue5,AboutValue6 ,HeroServicesHover,
     AboutUsHeroSectionHover, BombAnimationHovered, BombAnimation,maleIcon,
     HomeLeftGradient,HomeRightGradient,purityaVector ,allerAIVector ,zugoVector,Sanket ,SeheduleCallGradient ,Meeting,WhatsApp ,Close,
-    FounderImage ,Cookies ,CookiesIcon
+    FounderImage ,Cookies ,CookiesIcon ,FounderMobileImage
 
 
 }
