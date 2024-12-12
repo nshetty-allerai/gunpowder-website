@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Bom } from '@/utils/constants/constant'
+import { Bom, Opened, RightRounded } from '@/utils/constants/constant'
 import { Hash, Mobile, Speaker, Internet, MVP, Setting, VideoImage } from '@/utils/constants/constant'
 import UpArrow from '@/utils/Icons/UpArrow'
 import Bomb from '@/utils/Icons/Bomb'
@@ -11,7 +11,7 @@ const WhoWeAre = () => {
 
     const Card = ({ key, icon, title, desc }) => {
         return (
-            <div key={key} className='border border-[#FF007340] h-full hover:border-[#FF0073] rounded-[37px] px-6 py-8 cursor-pointer text-white hover:text-[#FF0073] hover:bg-[#FF00732E] transition duration-300 ease-in-out w-[329px] md:w-auto'>
+            <div key={key} className='border border-[#FF007340] h-full border-[#FF0073] rounded-[37px] px-6 py-8 cursor-pointer text-white bg-[#2E0015A8] transition duration-300 ease-in-out w-[329px] md:w-auto'>
                 <div className='flex justify-between items-center'>
                     <div className='text-[#FF0073]'>
                         <Image
@@ -72,11 +72,99 @@ const WhoWeAre = () => {
     return (
         <>
             <div className='max-w-[1200px] mx-auto lg:pt-40 pt-14 relative bg-black z-10'>
-                <div className='border border-[#FF0073] rounded-2xl flex flex-col-reverse md:flex-row lg:pt-8 lg:pb-12 lg:px-14  md:pt-6 md:pb-8 md:px-10 pt-6 pb-6 px-6 relative md:mx-8 mx-4 bg-[#2E0015A8] mb-1'>
+                <div className='border border-[#FF0073] rounded-2xl flex flex-col-reverse md:flex-row lg:pt-4 lg:pb-8 lg:px-8  md:pt-3 md:pb-7 md:px-8 pt-6 pb-6 px-6 relative md:mx-8 mx-4 bg-[#2E0015A8] mb-1'>
                     <div className='lg:max-w-[700px] md:max-w-[423px] flex justify-start flex-col'>
                         <h5 className='font-bold lg:text-[75px]  lg:leading-[110px] md:leading-[74px] md:text-[48px] text-[36px] mt-4 md:mt-0 font-afacad'>Who are we</h5>
-                        <p className='lg:text-xl text-base font-urbanist'>At <span className='text-brand'>Gunpowder Innovations</span>, we’re a UK-based digital agency of creators, designers, developers, and strategists passionate about building impactful digital solutions. Since our journey began, we’ve partnered with clients across industries to craft apps, websites, and digital experiences that combine stunning design with powerful functionality. Our mission is to bring client ideas to life, delivering results that meet needs and exceed expectations with integrity, creativity, and commitment to satisfaction.
-                        </p>
+                        <div className='lg:text-lg text-base font-urbanist'>
+                            <div className='lg:block hidden'>
+                                <div className='flex items-start gap-2 lg:gap-2'>
+                                    <div className='md:w-[5%] w-[6%]'>
+                                        <Image
+                                            src={RightRounded}
+                                            alt=""
+                                            className="w-6 cursor-pointer mt-1"
+                                        />
+                                    </div>
+                                    <div className='w-[95%]'>
+                                        Gunpowder Innovations are a UK-based digital agency of creators, designers, developers, and strategists
+                                    </div>
+                                </div>
+                                <div className='flex items-start mt-3 gap-2 lg:gap-2'>
+                                    <div className='md:w-[5%] w-[6%]'>
+                                        <Image
+                                            src={RightRounded}
+                                            alt=""
+                                            className="w-6 cursor-pointer mt-1"
+                                        />
+                                    </div>
+                                    <div className='w-[95%]'>
+                                        We are passionate about building impactful digital solutions.
+                                    </div>
+                                </div>
+                                <div className='flex items-start mt-3 gap-2 lg:gap-2'>
+                                    <div className='md:w-[5%] w-[6%]'>
+                                        <Image
+                                            src={RightRounded}
+                                            alt=""
+                                            className="w-6 cursor-pointer mt-1"
+                                        />
+                                    </div>
+                                    <div className='w-[95%]'>
+                                        We have partnered with clients across multiple industries to craft; apps, websites, & digital experiences that combine stunning design with powerful functionality.
+                                    </div>
+                                </div>
+                                <div className='flex items-start mt-3 gap-2 lg:gap-2'>
+                                    <div className='md:w-[5%] w-[6%]'>
+                                        <Image
+                                            src={RightRounded}
+                                            alt=""
+                                            className="w-6 cursor-pointer mt-1"
+                                        />
+                                    </div>
+                                    <div className='w-[95%]'>
+                                        Our mission is to bring client ideas to life, delivering results that meet needs and exceed expectations with integrity, creativity, and commitment to satisfaction.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='lg:hidden'>
+                                <div className='flex items-start mt-4 gap-2 lg:gap-2'>
+                                    <div className='md:w-[5%] w-[6%]'>
+                                        <Image
+                                            src={RightRounded}
+                                            alt=""
+                                            className="w-6 cursor-pointer mt-1"
+                                        />
+                                    </div>
+                                    <div className='w-[95%]'>
+                                        We’re a UK-based team of passionate creators, designers, and developers.
+                                    </div>
+                                </div>
+                                <div className='flex items-start mt-4 gap-2 lg:gap-2'>
+                                    <div className='md:w-[5%] w-[6%]'>
+                                        <Image
+                                            src={RightRounded}
+                                            alt=""
+                                            className="w-6 cursor-pointer mt-1"
+                                        />
+                                    </div>
+                                    <div className='w-[95%]'>
+                                        Crafting apps, websites, and digital experiences with design and functionality.
+                                    </div>
+                                </div>
+                                <div className='flex items-start mt-4 gap-2 lg:gap-2'>
+                                    <div className='md:w-[5%] w-[6%]'>
+                                        <Image
+                                            src={RightRounded}
+                                            alt=""
+                                            className="w-6 cursor-pointer mt-1"
+                                        />
+                                    </div>
+                                    <div className='w-[95%]'>
+                                        Committed to bringing ideas to life with creativity and integrity.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className=''>
                         <div className='lg:absolute lg:right-14 lg:bottom-10 flex lg:flex-none justify-center items-end lg:w-auto w-full'>
@@ -89,7 +177,7 @@ const WhoWeAre = () => {
             <div className='lg:pt-[200px] md:pt-20 pt-16 relative bg-black z-10'>
                 <div className='max-w-[1200px] mx-auto'>
                     <div className='mx-4'>
-                        <h5 className='text-center lg:text-[40px] leading-[46px] font-bold hidden lg:block font-afacad'>We can help you <span className='text-[#FF0073]'>With</span></h5>
+                        <h5 className='text-center lg:text-[40px] leading-[46px] font-bold hidden lg:block font-afacad'>We can <span className='text-[#FF0073]'>help </span>you With...</h5>
                         <h5 className='text-center md:text-[40px] text-[32px] leading-[46px] font-bold lg:hidden'>Our <span className='text-[#FF0073]'> Services </span></h5>
 
                         <p className='text-center max-w-[713px] mx-auto md:text-lg text-base lg:mt-4 md:mt-3 mt-2'>We offer end-to-end services, including strategy, design, development, and marketing, to bring your vision to life and deliver impactful results.</p>
@@ -109,7 +197,7 @@ const WhoWeAre = () => {
             </div>
             <div className='max-w-[1440px] mx-auto lg:mt-40 md:mt-14 mt-10'>
                 {/* <Image src={VideoImage} alt="test" className='w-full lg:h-[700px] md:h-[562px] h-[350px] object-cover' /> */}
-                <Video/>
+                <Video />
             </div>
         </>
     )
