@@ -44,7 +44,7 @@ const Questions = () => {
         },
         {
             question: 'How much time does a typical project take?',
-            answer: 'The timeline varies by project scope but typically ranges from a few weeks to several months.'
+            answer: 'he timeline varies by project scope but typically ranges from a week to two months for complex builds'
         },
         {
             question: 'What industries do you specialize in?',

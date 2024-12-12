@@ -14,17 +14,17 @@ const Process = () => {
     {
       icon: <WireFrame />,
       title: "Wireframing",
-      description: "At project kickoff, we collaborate closely to build a solid plan, using either client-provided scope or co-developed insights."
+      description: "When we kickoff the project, we collaborate closely to build a clear and concise plan and timeline, incorporating the clients or co-developed insights."
     },
     {
       icon: <Design />,
       title: "Design",
-      description: "After wireframes, our design team brings the app to life with clickable versions for full user experience before coding."
+      description: "Once wireframing is complete, our design team brings the app to life with clickable versions to provide the full user experience, prior to coding."
     },
     {
       icon: <Code />,
       title: "Code",
-      description: "Once designs are set, we start coding in Agile Sprints, enabling regular reviews and feedback to keep you involved throughout."
+      description: "Coding occurs in Agile Sprints, enabling regular reviews and feedback to keep you involved throughout the build process"
     },
     {
       icon: <Testing />,
@@ -56,7 +56,7 @@ const Process = () => {
   return (
     <section className='max-w-[1440px] mx-auto my-20'>
       <div className='flex justify-between flex-col md:flex-row md:items-center mx-8'>
-        <h4 className='font-bold lg:text-[70px] md:leading-[86px] md:text-[40px] text-3xl font-afacad'>Our <span className='text-[#FF0073]'>Essential</span> Process</h4>
+        <h4 className='font-bold lg:text-[70px] md:leading-[86px] md:text-[40px] text-3xl font-afacad'>Our end to end <span>process</span></h4>
         {/* <button className='flex items-center gap-1 px-6 py-3 font-bold bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 rounded-[30px] w-fit mt-6 md:mt-0'>chat with us
           <Image
             src={Arrow}

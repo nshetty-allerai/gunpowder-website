@@ -9,12 +9,12 @@ const FeturedAndBenifts = () => {
     {
       icon: ContactCard,
       title: 'Expertise You Can Count On',
-      description: 'From e-commerce to healthcare, our team understands your industry inside and out. With extensive cross-sector experience, we tackle unique challenges with precision and expertise to deliver tailored solutions.'
+      description: 'From e-commerce to healthcare, our team will ensure we understand your industry inside and out. With extensive cross-sector experience, we tackle unique challenges with precision and expertise to deliver tailored solutions.'
     },
     {
       icon: VisionCard,
       title: 'Your Vision, Our Priority',
-      description: 'We’re here to bring your vision to life with a client-first approach. You’ll be at the center of every step, ensuring a seamless and transparent partnership from start to finish.'
+      description: 'We’re here to bring your vision to life with a client-first approach. You’ll be at the epicentre step-by-step, ensuring a seamless and transparent partnership from start to finish.'
     },
     {
       icon: Inovation,
@@ -120,7 +120,7 @@ const FeturedAndBenifts = () => {
 
             {/* card 1 */}
 
-          <div className='bg-[#DCA800] z-10 relative md:min-h-[605px] min-h-[385px] h-full rounded-lg pb-10 pt-[30px] md:min-w-[432px] min-w-[310px] w-full lg:px-8 md:px-6 px-4 flex-1 ms-8'>
+          <div className='bg-[#DCA800] z-10 relative md:min-h-[605px] min-h-[385px] h-full rounded-[20px] pb-10 pt-[30px] md:min-w-[432px] min-w-[310px] w-full lg:px-8 md:px-6 px-4 flex-1 ms-8'>
             <div className='relative flex justify-start items-start'>
               <Image
                 src={PurityaLogo}
@@ -134,19 +134,19 @@ const FeturedAndBenifts = () => {
               <Image
                 src={PurityaMockup}
                 alt=''
-                className={`w-full absolute bottom-0 right-0`}
+                className={`w-full absolute rounded-br-[20px] bottom-6 right-0`}
               />
             </div>
-            <div className='absolute top-0 left-0 z-[-20] rounded-tl-lg'>
+            <div className='absolute top-0 left-0 z-[-20] rounded-tl-[20px]'>
               <Image
                 src={purityaVector}
-                className='w-full rounded-tl-lg'
+                className='w-full rounded-tl-[20px]'
                 alt='vector'
               />
             </div>
           </div>
           {/* card 2 */}
-          <div className='bg-[#2D144C] relative md:min-h-[605px] min-h-[385px]  rounded-lg pb-10 pt-[30px] md:min-w-[422px] min-w-[310px] w-full lg:px-8 md:px-6 px-4 flex-1'>
+          <div className='bg-[#2D144C] relative md:min-h-[605px] min-h-[385px]  rounded-[20px] pb-10 pt-[30px] md:min-w-[422px] min-w-[310px] w-full lg:px-8 md:px-6 px-4 flex-1'>
             <div className='relative flex justify-start items-start z-10'>
               <Image
                 src={ZugoLogo}
@@ -160,13 +160,13 @@ const FeturedAndBenifts = () => {
               <Image
                 src={ZugoMockup}
                 alt=''
-                className={`w-full absolute bottom-0 right-0  z-10`}
+                className={`w-full absolute bottom-3 right-0  z-10`}
               />
             </div>
-            <div className='absolute w-full h-full top-0 left-0 right-0 z-0 object-cover rounded-lg'>
+            <div className='absolute w-full h-full top-0 left-0 right-0 z-0 object-cover rounded-[20px]'>
               <Image
                 src={zugoVector}
-                className='w-full h-full object-cover rounded-lg'
+                className='w-full h-full object-cover rounded-[20px]'
                 alt='vector'
               />
             </div>
@@ -174,7 +174,7 @@ const FeturedAndBenifts = () => {
           {/* card 3 */}
           <div 
              style={{ background: 'linear-gradient(to top right, #FFFB00 0%, #FFCC00 100%)' }}
-              className=' relative  md:min-h-[605px] min-h-[385px] bg-[] h-full rounded-lg pb-10 pt-[30px] md:min-w-[432px] min-w-[310px] w-full lg:px-8 md:px-6 px-4 flex-1 me-8'>
+              className=' relative  md:min-h-[605px] min-h-[385px] bg-[] h-full rounded-[20px] pb-10 pt-[30px] md:min-w-[432px] min-w-[310px] w-full lg:px-8 md:px-6 px-4 flex-1 me-8'>
             <div className='relative flex justify-start items-start z-10'>
               <Image
                 src={AllerWellLogo}
@@ -188,7 +188,7 @@ const FeturedAndBenifts = () => {
               <Image
                 src={AllerwellMockup}
                 alt=''
-                className={`w-full absolute bottom-0 right-0 rounded-br-lg`}
+                className={`w-full absolute bottom-0 right-0 rounded-br-[20px] rounded-bl-[20px]`}
               />
             </div>
             <div className='absolute top-0 left-0 z-0'>
@@ -232,7 +232,7 @@ const FeturedAndBenifts = () => {
           </div>
           <div className='flex flex-col justify-center items-center h-full relative z-10'>
             <h6 className='text-[36px] leading-[46px] font-bold font-afacad'>We&apos;ll reply in 24 hrs</h6>
-            <p className='text-lg py-6 '>Only slots left for new projects</p>
+            <p className='text-lg py-6 '>Book a call in via our calendar here</p>
             {/* <button className='flex items-center gap-1 px-6 py-3 font-bold bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 rounded-[30px]'>chat with us
               <Image
                 src={Arrow}
@@ -240,13 +240,13 @@ const FeturedAndBenifts = () => {
                 className='w-[18px]'
               />
             </button> */}
-            <Button>Chat With Us</Button>
+            <Button>Book Call</Button>
           </div>
         </div>
       </section>
       <section className='max-w-[1440px] mx-auto mt-20 md:pb-20 pb-10'>
         <div>
-          <h6 className='font-bold md:text-[40px] md:leading-[46px] text-3xl text-center font-afacad'>Yes. We cover your <span className='text-[#FF0073]'>tech stack and tools.</span></h6>
+          <h6 className='font-bold md:text-[40px] md:leading-[46px] text-3xl text-center font-afacad'>We have <span className='text-brand'>expertise</span> in the most <span className='text-brand'>popular tech</span> stacks & tools</h6>
           <p className='text-center text-base md:text-lg mt-3'>Our team has expertise in most the popular tools and
             <br className='' />
             programming languages.</p>
