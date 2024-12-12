@@ -2,6 +2,7 @@ import React from 'react'
 import { HeroServices, Arrow, BackgroundServices, ScrollDownArrow,AboutUsHeroSection,AboutHeroLeftSide,AboutHeroRightSide, AboutLeftMobile, AboutRightMobile, AboutLeftTab, AboutRightTab } from '@/utils/constants/constant'
 import Image from 'next/image'
 import AboutHero from '@/utils/Icons/AboutHero'
+import Button from '../common/Button'
 //  
 
 
@@ -15,14 +16,15 @@ const HeroSection = () => {
                     <p className='mt-4'>
                         We specialize in creating custom apps, websites, and brands that help businesses thrive in the digital world. Our team of innovative thinkers and tech experts brings your ideas to life with smart design and cutting-edge technology.
                     </p>
-                    <div className='lg:hidden flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300  text-white w-fit px-6 py-3 md:px-6 md:py-[14px] rounded-[30px] lg:mt-8 md:mt-6 mt-4 relative'>
+                    {/* <div className='lg:hidden flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300  text-white w-fit px-6 py-3 md:px-6 md:py-[14px] rounded-[30px] lg:mt-8 md:mt-6 mt-4 relative'>
                         <span className='text-base font-bold'>Let&apos;s Talk</span>
                         <Image
                             src={Arrow}
                             alt='arrow'
                             className='w-[18px]'
                         />
-                    </div>
+                    </div> */}
+                    <Button>Let&apos;s Talk</Button>
                     {/* <div className='hidden lg:flex items-center gap-3 mt-8 '>
                         <Image
                         src={ScrollDownArrow}
