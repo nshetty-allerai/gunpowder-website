@@ -7,7 +7,7 @@ export const SendMail = () => {
     
     return (
         <>
-            <a href="mailto:reach@gunpowderinnovations.com?subject=0ffer Inquiry&cc=correspondence@allerai.co.uk&bcc=correspondence@allerai.co.uk&body-Hi I would like to learn more about the offer..."  className='cursor-pointer flex items-center gap-4 border border-brand md:max-w-[433px] max-w-full md:rounded-[37px] rounded-xl bg-[#FF00732E] md:p-4 p-3 lg:mt-8 md:mt-7 mt-6'>
+            <a target='_blank' href="mailto:reach@gunpowderinnovations.com?subject=0ffer Inquiry&cc=correspondence@allerai.co.uk&bcc=correspondence@allerai.co.uk&body-Hi I would like to learn more about the offer..."  className='cursor-pointer flex items-center gap-4 border border-brand md:max-w-[433px] max-w-full md:rounded-[37px] rounded-xl bg-[#FF00732E] md:p-4 p-3 lg:mt-8 md:mt-7 mt-6'>
                 <div className='md:w-[83px] w-12'>
                     <Image
                         src={EmailIcon}

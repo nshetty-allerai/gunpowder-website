@@ -71,7 +71,7 @@ const ScheduleCallModal = ({ open, close }) => {
                                 <h6 className='md:text-3xl text-xl font-afacad'>Quick Chat</h6>
                             </div>
                             <p className='font-semibold text-sm leading-[20px] my-5'>Let&apos;s cut to the chase. Our business team is a text away!</p>
-                            <a target='_blank' href='https://api.whatsapp.com/send/?phone=7259191786&text=Hello%2C+thank+you+for+reaching+out.+Please+let+us+know+how+we+can+assist+you.&type=phone_number&app_absent=0' className='flex justify-center items-center hover:text-brand  w-full py-4 bg-transparent border-2 text-brand border-brand rounded-[30px] font-semibold text-lg'>Chat Now</a>
+                            <a target='_blank' href='https://api.whatsapp.com/send/?phone=+917259191786&text=Hello%2C+thank+you+for+reaching+out.+Please+let+us+know+how+we+can+assist+you.&type=phone_number&app_absent=0' className='flex justify-center items-center hover:text-brand  w-full py-4 bg-transparent border-2 text-brand border-brand rounded-[30px] font-semibold text-lg'>Chat Now</a>
                         </div>
                     </div>
                 </Modal>

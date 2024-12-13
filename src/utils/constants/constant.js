@@ -96,6 +96,7 @@ import Member9 from '../../../public/svg/Member9.svg'
 import Member10 from '../../../public/svg/Member10.svg'
 import BannerImage from '../../../public/images/BannerImage.png'
 import EmailIcon from '../../../public/svg/EmailIcon.svg'
+import WhatsAppIcon from '../../../public/svg/WhatsAppIcon.svg'
 import ArrowNext from '../../../public/svg/ArrowNext.svg'
 import ContactUgGradient from '../../../public/svg/ContactUgGradient.svg'
 import LeftBottomGradient from '../../../public/svg/LeftBottomGradient.svg'
@@ -209,7 +210,7 @@ export {
     AboutUsHeroSection,AboutHeroLeftSide,AboutHeroRightSide,ScrollDownArrow,Founder,
     CardBackground,Commited,
     Member1,Member2,Member3,Member4,Member5,Member6,Member7,Member8,Member9,Member10,
-    BannerImage ,EmailIcon,ArrowNext,
+    BannerImage ,EmailIcon,ArrowNext,WhatsAppIcon,
     ContactUgGradient ,LeftBottomGradient ,PricingHero ,RightRounded,
 
     PricingLeftDesktop1,PricingLeftDesktop2,PricingRigthDesktop1,

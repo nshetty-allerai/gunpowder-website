@@ -8,10 +8,13 @@ import { SendMail } from './SendMail'
 import emailjs from '@emailjs/browser';
 import {LoadingOutlined} from '@ant-design/icons'
 import {message} from 'antd'
+import { WhatsAppCard } from './WhatsAppCard'
+import Services from './Services'
 const ContactForm = () => {
     const form = useRef();
     const [isLoading,setIsLoading]=useState(false)
-    const [selectedTab, setSelectedTab] = useState('£0 to £5k');
+    const [selectedTab, setSelectedTab] = useState('£0 to £25k');
+    const [selectedServices,setSelectedServices]=useState(["Websites","UI/UX Design"])
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
@@ -76,8 +79,9 @@ const ContactForm = () => {
                 <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-[73px] gap-[30px] md:px-8 px-4'>
                     <div className='relative z-20'>
                         <h3 className='font-bold lg:text-[84px] lg:leading-[90px] md:text-[48px] md:leading-[90px] text-4xl font-afacad'>Contact with us</h3>
-                        <p className='font-medium lg:text-lg md:text-base text-sm md:mt-7 mt-3'>We&apos;re here to connect collaborate and bring your ideas to life weather you&apos;re ready to embark on an exciting project or simply wish to explore how we can support your vision</p>
+                        <p className='font-medium lg:text-lg md:text-base text-sm md:mt-7 mt-3'>Wer&apos;e here to connect, collaborate and bring your ideas to life weather you&apos;re ready to embark on an exciting project or simply wish to explore how we can support your vision</p>
                         <SendMail/>
+                        <WhatsAppCard/>
                         {/* <div className='cursor-pointer flex items-center gap-4 border border-brand md:max-w-[433px] max-w-full md:rounded-[37px] rounded-xl bg-[#FF00732E] md:p-4 p-3 lg:mt-8 md:mt-7 mt-6'>
                             <div className='md:w-[83px] w-12'>
                                 <Image
@@ -149,6 +153,7 @@ const ContactForm = () => {
                                     name="project_budget"
                                     value={selectedTab}
                                 />
+                                <Services selectedServices={selectedServices} setSelectedServices={setSelectedServices} /> 
                                 <BudgetTabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
                                 {/* <!-- Submit Button --> */}
                                 <div className='mt-8'>

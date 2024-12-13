@@ -7,14 +7,19 @@ import ContactForm from '@/components/Contact/ContactForm'
 import Questions from '@/components/UI/Questions'
 import React from 'react'
 import ScheduleCall from '@/components/Contact/ScheduleCall'
+import PricingGradient from '../pricing/PricingGradient'
 
 const Contact = () => {
   return (
     <div>
       <ContactForm/>
       {/* <Calendly/> */}
-      <ScheduleCall/>
-     <Questions/>
+      {/* <ScheduleCall/> */}
+      <Questions/>
+     <PricingGradient 
+          title="Ready to bring your ideas to life? Schedule a call with us today!"
+          description="Our team is here to help you succeed. Let&apos;s work together to achieve your goals and elevate your brand to new heights."
+        />
     </div>
   )
 }

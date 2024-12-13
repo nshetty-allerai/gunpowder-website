@@ -389,7 +389,7 @@ const Pricing = () => {
         </section>
 
         {/* Plan Details */}
-        <section className='max-w-[1440px] mx-auto lg:mt-[96px] md:mt-[50px] mt-8 mb-20 md:mb-0'>
+        <section className='max-w-[1440px] mx-auto lg:mt-[96px] md:mt-[50px] mt-8 mb-20 md:mb-[90px] lg:mb-[130px] '>
           <div className='md:px-8 px-4'>
             <h3 className='lg:text-4xl mdtext-3xl text-2xl md:mb-10 mb-8'>What’s included in all plans</h3>
             <div className='grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 px-6 py-8 md:gap-8 lg:bg-[#17012D40] md:bg-[#17012D8A] bg-[#17012db7] rounded-[19px] relative z-30'>
@@ -411,7 +411,10 @@ const Pricing = () => {
             </div>
           </div>
         </section> */}
-        <PricingGradient/>
+        <PricingGradient 
+          title="Ready to bring your ideas to life? Schedule a call with us today!"
+          description="Our team is here to help you succeed. Let&apos;s work together to achieve your goals and elevate your brand to new heights."
+        />
       </div>
 
 
