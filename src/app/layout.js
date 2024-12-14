@@ -5,7 +5,7 @@ import Footer from "@/components/common/Footer";
 import CustomCursor from "@/components/common/CustomCursor";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Urbanist, Afacad } from 'next/font/google';
 
 // Define fonts
@@ -41,6 +41,7 @@ export default function RootLayout({ children }) {
         <AntdRegistry>
           <CustomCursor />
           <Header />
+          <SpeedInsights/>
           {children}
           <Footer />
         </AntdRegistry>
