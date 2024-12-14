@@ -90,6 +90,8 @@ const Header = () => {
           <hr className="w-full border-t-[1px] border-[#FF007333]" />
           <Link onClick={() => setShow((prev) => !prev)} className={pathname == '/contact' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} href='/contact'>Contact</Link>
           <hr className="w-full border-t-[1px] border-[#FF007333] md:hidden" />
+          <Link className={pathname == '' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} target='_blank' href='https://www.allerai.co.uk'>Products</Link>
+          <hr className="w-full border-t-[1px] border-[#FF007333] md:hidden" />
           <Link className={pathname == '#' ? 'px-6 py-2.5 rounded-3xl text-white bg-[#FF0073] md:hidden' : 'px-6 py-2.5 text-white bg-[#FF0073] cursor-pointer  rounded-3xl w-full text-center md:hidden'} href='#'>Let&apos;s Talk</Link>
         </div>
       </div>}
@@ -98,7 +100,7 @@ const Header = () => {
         close={()=>setShowModal(false)}
       />
        {/* {showCookies&& <CookiesModal setShowCookies={setShowCookies}/>} */}
-       {showCookies&& <CookieConsentComponent/>}
+       {/* {showCookies&& <CookieConsentComponent/>} */}
     </div>
   )
 }
