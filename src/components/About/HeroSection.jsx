@@ -9,7 +9,7 @@ import Button from '../common/Button'
 const HeroSection = () => {
     return (
         <section className='max-w-[1440px] mx-auto relative '>
-            <div className='flex items-center justify-center md:gap-14 gap-10 md:flex-row flex-col-reverse py-10 lg:py-[100px] lg:mx-10 md:mx-6 mx-4 relative z-10'>
+            <div className='flex items-center justify-center md:gap-14 gap-10 md:flex-row flex-col-reverse py-10 lg:py-[150px] lg:mx-10 md:mx-6 mx-4 relative z-10'>
                 <div className='lg:max-w-[854px] md:max-w-[416px] w-full px-4'>
                     <h5 className='lg:text-7xl md:text-[42px] md:leading-[52px] text-3xl font-bold font-afacad'>We&apos;re a <span className='text-brand'>creative</span> team</h5>
                     <h5 className='lg:text-7xl md:text-[42px] md:leading-[52px] text-3xl font-bold font-afacad'>based in <span className='text-brand'>London</span></h5>
