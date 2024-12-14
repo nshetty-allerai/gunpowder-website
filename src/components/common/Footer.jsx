@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const Footer = () => {
     return (
-        <footer id="footer" className='bg-[#191919] relative z-30'>
+        <footer id="footer" className='bg-[#191919] relative z-10'>
             <div className='max-w-[1440px] mx-auto py-10 px-4 lg:px-8 font-semibold text-base'>
                 <div className='flex justify-center '>
                     <Image

@@ -16,8 +16,7 @@ const Cards = () => {
             <span className='bg-[#010B40] py-2 px-3 rounded-3xl font-semibold'>Motion Design</span>
           </div>
           <p className='lg:text-2xl md:text-xl text-base font-medium'>
-              Our design team blends creativity and strategy to elevate your brand. With expertise in both digital and print, we deliver visually stunning designs that align with your goals, creating meaningful experiences for your audience.
-          </p>
+          Our design team blends creativity and strategy to elevate your brand. With expertise in both digital and print, we deliver visually stunning designs that align with your goals, creating meaningful experiences for your audience.          </p>
           {/* <button className='flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 text-white w-fit px-6 py-3 md:px-6 md:py-[12px] rounded-[30px] lg:mt-14 md:mt-10 mt-4 relative'>
             <span className='text-base font-bold'>Let&apos;s Talk</span>
           </button> */}
@@ -41,7 +40,7 @@ const Cards = () => {
           />
         </div>
         <div className='lg:w-[65%]'>
-          <h4 className='font-bold text-[56px] leading-[74px] font-afacad'><span className='text-[#AB00C7]'>Web </span>Design & Development</h4>
+          <h4 className='font-bold text-[56px] leading-[74px] font-afacad'><span className='text-[#AB00C7]'>Web Apps </span>Design & Development</h4>
           <div className='flex flex-wrap  items-center gap-3 my-5'>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Websites</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>E-commerce</span>
@@ -51,8 +50,7 @@ const Cards = () => {
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>SaaS</span>
           </div>
           <p className='lg:text-2xl md:text-xl text-base font-medium'>
-          Our web development service brings your ideas to life with custom, responsive, and scalable websites. We prioritize performance, security, and user experience to ensure your site looks great and functions seamlessly across all devices.
-          </p>
+            Our web app development service brings your ideas to life with custom, responsive, and scalable apps and websites. We prioritize performance, security, and user experience to ensure your site looks great and functions seamlessly across all devices.          </p>
           {/* <button className='flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 text-white w-fit px-6 py-3 md:px-6 md:py-[12px] rounded-[30px] lg:mt-14 md:mt-10 mt-4 relative'>
             <span className='text-base font-bold'>Let&apos;s Talk</span>
           </button> */}
@@ -71,8 +69,7 @@ const Cards = () => {
             <span className='bg-[#012539] py-2 px-3 rounded-3xl font-semibold'>Retail</span>
           </div>
           <p className='lg:text-2xl md:text-xl text-base font-medium'>
-            Our web development service brings your ideas to life with custom, responsive, and scalable websites. We focus on performance, security, and user experience to ensure your site not only looks great but also delivers seamless functionality across all devices.
-          </p>
+          We craft seamless and user-friendly mobile experiences, transforming ideas into intuitive and engaging applications. Our approach combines innovative designs with robust functionality to deliver solutions that empower users and exceed expectations.          </p>
           {/* <button className='flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 text-white w-fit px-6 py-3 md:px-6 md:py-[12px] rounded-[30px] lg:mt-14 md:mt-10 mt-4 relative'>
             <span className='text-base font-bold'>Let&apos;s Talk</span>
           </button> */}
@@ -107,8 +104,7 @@ const Cards = () => {
             <span className='bg-[#003040] py-2 px-3 rounded-3xl font-semibold'>Brand Strategy</span>
           </div>
           <p className='lg:text-2xl md:text-xl text-base font-medium'>
-          Our web development service turns your ideas into custom, responsive, and scalable websites. We prioritize performance, security, and user experience to ensure your site looks great and functions seamlessly on all devices.
-          </p>
+            We create data-driven digital marketing strategies to connect your brand with the right audience. From SEO to social media, we drive engagement, boost conversions, and maximize ROI.          </p>
           <button className='flex items-center gap-2 border border-[#FF0073] text-[#FF0073] cursor-pointe w-fit px-3 py-4 md:px-6 md:py-[16px] rounded-[30px] lg:mt-14 md:mt-10 mt-4 relative'>
             <span className='text-base font-bold'>Coming Soon</span>
           </button>

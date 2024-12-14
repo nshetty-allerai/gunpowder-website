@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { PurityaLogo, AllerWellLogo, ZugoLogo, ContactCard, VisionCard, Inovation, ProjectCard, AimCard, ResultCard, Circles, Arrow, TechDesktop, TechTab, TechMobile, Video2, PurityaMockup, AllerwellMockup, ZugoMockup, BookedText, purityaVector, allerAIVector, zugoVector } from '@/utils/constants/constant'
 import Button from '../common/Button'
+import Technology from '../OurServices/Technology'
 
 const FeturedAndBenifts = () => {
 
@@ -160,7 +161,7 @@ const FeturedAndBenifts = () => {
               <Image
                 src={ZugoMockup}
                 alt=''
-                className={`w-full absolute bottom-3 right-0  z-10`}
+                className={`w-full absolute bottom-[14px] right-0  z-10`}
               />
             </div>
             <div className='absolute w-full h-full top-0 left-0 right-0 z-0 object-cover rounded-[20px]'>
@@ -252,7 +253,7 @@ const FeturedAndBenifts = () => {
             programming languages.</p>
         </div>
 
-        <div className='flex flex-wrap items-center justify-center  gap-x-[60px]  gap-y-1 md:gap-y-2  lg:gap-y-8 lg:text-[40px] text-[32px] leading-[64px] mx-4 mt-20'>
+        {/* <div className='flex flex-wrap items-center justify-center  gap-x-[60px]  gap-y-1 md:gap-y-2  lg:gap-y-8 lg:text-[40px] text-[32px] leading-[64px] mx-4 mt-20'>
           <div className='hover:font-bold hover:text-[#FF0073] transition-all duration-300 cursor-pointer'>Cloud</div>
           <div className='hover:font-bold hover:text-[#FF0073] transition-all duration-300 cursor-pointer'>Adobe XD</div>
           <div className='hover:font-bold hover:text-[#FF0073] transition-all duration-300 cursor-pointer'>Jitter</div>
@@ -272,7 +273,8 @@ const FeturedAndBenifts = () => {
           <div className='hover:font-bold hover:text-[#FF0073] transition-all duration-300 cursor-pointer'>Node.Js</div>
           <div className='hover:font-bold hover:text-[#FF0073] transition-all duration-300 cursor-pointer'>Vue.Js</div>
           <div className='hover:font-bold hover:text-[#FF0073] transition-all duration-300 cursor-pointer'>JavaScript</div>
-        </div>
+        </div> */}
+         <Technology show={false}/>
       </section>
 
 

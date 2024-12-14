@@ -56,7 +56,7 @@ const Process = () => {
   return (
     <section className='max-w-[1440px] mx-auto my-20'>
       <div className='flex justify-between flex-col md:flex-row md:items-center mx-8'>
-        <h4 className='font-bold lg:text-[70px] md:leading-[86px] md:text-[40px] text-3xl font-afacad'>Our end to end <span>process</span></h4>
+        <h4 className='font-bold lg:text-[70px] md:leading-[86px] md:text-[40px] text-3xl font-afacad'>Our end to end <span className='text-brand'>process</span></h4>
         {/* <button className='flex items-center gap-1 px-6 py-3 font-bold bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 rounded-[30px] w-fit mt-6 md:mt-0'>chat with us
           <Image
             src={Arrow}

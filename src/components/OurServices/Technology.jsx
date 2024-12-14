@@ -85,13 +85,13 @@ const Card = ({icon ,technology}) => {
     )
 }
 
-const Technology = () => {
+const Technology = ({show=true}) => {
     return (
         <section className="max-w-[1440px] mx-auto lg:my-20 md:my-10 my-10">
-            <div >
+            {show &&<div >
                 <h5 className='text-center font-bold md:text-[40px] md:leading-[46px] text-3xl font-afacad'>Technologies & Tools</h5>
                 <p className='text-center text-lg mt-4'>Tools and we use to get the job done.</p>
-            </div>
+            </div>}
             <div className='flex flex-wrap items-center justify-center md:gap-x-12 gap-x-3 gap-y-3 md:gap-y-12 mt-9'>
                 {data.map((item, index) => (
                     <div key={index}>
