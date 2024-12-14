@@ -82,25 +82,6 @@ const ContactForm = () => {
                         <p className='font-medium lg:text-lg md:text-base text-sm md:mt-7 mt-3'>Wer&apos;e here to connect, collaborate and bring your ideas to life weather you&apos;re ready to embark on an exciting project or simply wish to explore how we can support your vision</p>
                         <SendMail/>
                         <WhatsAppCard/>
-                        {/* <div className='cursor-pointer flex items-center gap-4 border border-brand md:max-w-[433px] max-w-full md:rounded-[37px] rounded-xl bg-[#FF00732E] md:p-4 p-3 lg:mt-8 md:mt-7 mt-6'>
-                            <div className='md:w-[83px] w-12'>
-                                <Image
-                                    src={maleIcon}
-                                    alt=""
-                                    className="w-full"
-                                />
-                            </div>
-                            <a>
-                                <h6 className='font-medium lg:text-2xl  md:text-xl text-base'>Schedule a call with us </h6>
-                                <p className='font-medium text-brand md:text-lg text-sm md:mt-3 mt-1'>
-                                    <Image
-                                        src={ArrowNext}
-                                        className='md:w-8 w-5'
-                                        alt='arrow'
-                                    />
-                                </p>
-                            </a>
-                        </div> */}
                     </div>
                     <div>
                         <div className="bg-[#110324] relative z-20 md:p-8 p-6 rounded-xl max-w-[598px] lg:mx-auto text-white">
@@ -152,6 +133,11 @@ const ContactForm = () => {
                                     type="hidden"
                                     name="project_budget"
                                     value={selectedTab}
+                                />
+                                <input
+                                    type="hidden"
+                                    name="services"
+                                    value={selectedServices}
                                 />
                                 <Services selectedServices={selectedServices} setSelectedServices={setSelectedServices} /> 
                                 <BudgetTabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
