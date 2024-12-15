@@ -25,7 +25,7 @@ const urbanist = Urbanist({
 
 
 export const metadata = {
-  title: "Gunpowder",
+  title: "Gunpowder Innovations",
   description: "Gunpowder Innovation",
 };
 

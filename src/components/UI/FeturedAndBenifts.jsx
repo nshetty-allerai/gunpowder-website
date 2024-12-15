@@ -40,7 +40,7 @@ const FeturedAndBenifts = () => {
   ]
   const Card = ({ key, icons, title, description }) => {
     return (
-      <div key={key} className='border  border-[#FF0073] rounded-[37px] px-6 py-8 cursor-pointer text-white hover:bg-[#FF00732E] transition duration-300 ease-in-out w-[329px] md:w-auto h-full'>
+      <div key={key} className='border  border-[#FF0073] rounded-[37px] px-6 py-8 text-white bg-[#FF00732E] transition duration-300 ease-in-out w-[329px] md:w-auto h-full'>
         <div>
           <Image
             src={icons}

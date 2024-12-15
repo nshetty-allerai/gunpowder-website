@@ -149,7 +149,7 @@ const ContactForm = () => {
                                         className="w-full py-3 rounded-[30px] bg-brand text-white font-semibold hover:bg-pink-600 focus:outline-none focus:ring-brand"
                                     >
                                         {isLoading?<LoadingOutlined style={{marginRight:'10px'}}/>:''}
-                                        Send Message
+                                        Request  Quote
                                     </button>
                                 </div>
                             </form>
