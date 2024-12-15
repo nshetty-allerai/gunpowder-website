@@ -328,7 +328,7 @@ Card.displayName = "Card";
 const PlanDetails = memo(({ questions }) => (
   <div className="h-fit">
     {questions.map((question, index) => (
-      <div key={index} className={`flex items-start gap-2 ${index !== questions.length - 1 ? 'mb-2' : ''}`}>
+      <div key={index} className={`flex items-start gap-2 ${index !== questions.length - 1 ? 'mb-3 lg:mb-4' : ''}`}>
         <Image
           src={RightRounded}
           alt="rounded"
