@@ -91,18 +91,18 @@ const Footer = () => {
                     <div className='flex justify-center items-center gap-8'>
                         <Link className='text-center mt-4 md:mt-0' href='/pricing'>Pricing</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/contact'>Contact</Link>
-                        <Link className='text-center mt-4 md:mt-0' href='/CookiesPolicy'>Cookies Policy</Link>
+                        {/* <Link className='text-center mt-4 md:mt-0' href='/CookiesPolicy'>Cookies Policy</Link> */}
                         {/* <Link className='text-center mt-4 md:mt-0' href='/PrivacyPolicy'>Privacy</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/TermsAndConditions'>T&C</Link> */}
                     </div>
                 </div>
                 <div className='border-t border-t-[#EAECF0] mt-20 mb-12 '></div>
-                <div className='flex-col md:flex-row flex items-center justify-between '>
+                <div className='flex-col 2xl:flex-row 2xl:gap-4 gap-8 flex items-center justify-between '>
                     <div className='text-center'>© 2024 Gunpowder Innovations (a trading name of AllerAI Limited). All rights reserved.</div>
                     <div className='flex gap-4 items-center mt-6 md:mt-0'>
-                        {/* <Link href="/PrivacyPolicy">Privacy Policy</Link>
+                        <Link href="/PrivacyPolicy">Privacy Policy</Link>
                         <Link href="/TermsAndConditions">Terms & Conditions</Link>
-                        <span>Cookies</span> */}
+                        <Link href="/CookiesPolicy">Cookie Policy</Link>
                         <div>
                             <noscript>
                                 Cookie Consent by{' '}
