@@ -151,7 +151,7 @@ const page = () => {
                             <p className='paragraph'>If you have any questions about this Cookies Policy, You can contact us:</p>
                         </div>
                         <ul className='mt-5 mx-4'>
-                            <li className='paragraph' style={{ listStyleType: 'disc' }}>By email: <a href="">[email protected]</a></li>
+                            <li className='paragraph' style={{ listStyleType: 'disc' }}>By email: <span className='text-brand'>reach@gunpowderinnovations.com</span></li>
                         </ul>
                     </div>
                 </div>

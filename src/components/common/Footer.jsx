@@ -86,9 +86,10 @@ const Footer = () => {
                     <div className='flex justify-center items-center gap-8'>
                         <Link className='text-center mt-4 md:mt-0' href='/'>Home</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/services'>Our Services</Link>
-                        <Link className='text-center mt-4 md:mt-0' href='/about'>About Us</Link>
+                        <Link className='text-center mt-4 md:mt-0' target='_blank' href='https://www.allerai.co.uk'>Products</Link>
                     </div>
                     <div className='flex justify-center items-center gap-8'>
+                        <Link className='text-center mt-4 md:mt-0' href='/about'>About Us</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/pricing'>Pricing</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/contact'>Contact</Link>
                         {/* <Link className='text-center mt-4 md:mt-0' href='/CookiesPolicy'>Cookies Policy</Link> */}

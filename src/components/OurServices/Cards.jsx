@@ -16,7 +16,7 @@ const Cards = () => {
             <span className='bg-[#010B40] py-2 px-3 rounded-3xl font-semibold'>Motion Design</span>
           </div>
           <p className='lg:text-2xl md:text-xl text-base font-medium'>
-          Our design team blends creativity and strategy to elevate your brand. With expertise in both digital and print, we deliver visually stunning designs that align with your goals, creating meaningful experiences for your audience.          </p>
+          Our design team blends creativity and strategy to elevate your brand. With expertise in digital world, we deliver visually stunning designs that align with your goals, creating meaningful experiences for your audience.</p>
           {/* <button className='flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 text-white w-fit px-6 py-3 md:px-6 md:py-[12px] rounded-[30px] lg:mt-14 md:mt-10 mt-4 relative'>
             <span className='text-base font-bold'>Let&apos;s Talk</span>
           </button> */}
@@ -45,12 +45,12 @@ const Cards = () => {
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Websites</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>E-commerce</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Self Service Portal</span>
-            <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Web apps</span>
+            <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Web Apps</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>Healthcare</span>
             <span className='bg-[#370141] py-2 px-3 rounded-3xl font-semibold'>SaaS</span>
           </div>
           <p className='lg:text-2xl md:text-xl text-base font-medium'>
-            Our web app development service brings your ideas to life with custom, responsive, and scalable apps and websites. We prioritize performance, security, and user experience to ensure your site looks great and functions seamlessly across all devices.          </p>
+          Our web app design & development service brings your ideas to life with custom, responsive, and scalable apps and websites. We prioritize performance, security, and user experience to ensure your site looks great and functions seamlessly across all devices.</p>
           {/* <button className='flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300 text-white w-fit px-6 py-3 md:px-6 md:py-[12px] rounded-[30px] lg:mt-14 md:mt-10 mt-4 relative'>
             <span className='text-base font-bold'>Let&apos;s Talk</span>
           </button> */}

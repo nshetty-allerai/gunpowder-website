@@ -17,7 +17,8 @@ const Contact = () => {
       {/* <ScheduleCall/> */}
       <Questions/>
      <PricingGradient 
-          title="Ready to bring your ideas to life? Schedule a call with us today!"
+          title="Bring your ideas to life schedule a call today!"
+          // description="Our team is here to help you succeed. Let&apos;s work together to achieve your goals and elevate your brand to new heights."
           description="Our team is here to help you succeed. Let&apos;s work together to achieve your goals and elevate your brand to new heights."
         />
     </div>

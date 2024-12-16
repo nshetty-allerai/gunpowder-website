@@ -291,15 +291,11 @@ const PlanDetailsData = [
   {
     key: 3,
     questions: ['Post-launch support for ongoing success.','Expert team delivering quality outcomes.','Scalable solutions for growing businesses.'],
-  },
-  {
-    key: 4,
-    questions: [],
-  },
+  }
 ];
 
 const Card = memo(({ planFor, title, description, questions, button  ,q }) => (
-  <div className="p-8 bg-[#32095140] border border-[#48025E] rounded-2xl h-full">
+  <div className={`p-8 bg-[#32095140] border border-[#48025E] rounded-2xl h-full`}>
     <p className="text-2xl">{planFor}</p>
     <h6 className="text-4xl font-semibold mt-6 font-afacad">{title}</h6>
     <p className="text-base mt-2">{description}</p>
@@ -356,8 +352,8 @@ const Pricing = () => {
     />
   )), []);
 
-  const planDetailsComponents = useMemo(() => PlanDetailsData.map((item) => (
-    <PlanDetails key={item.key} questions={item.questions} />
+  const planDetailsComponents = useMemo(() => PlanDetailsData.map((item ,index) => (
+      <PlanDetails key={item.key} questions={item.questions} />
   )), []);
 
   return (
@@ -391,8 +387,8 @@ const Pricing = () => {
         {/* Plan Details */}
         <section className='max-w-[1440px] mx-auto lg:mt-[96px] md:mt-[50px] mt-8 mb-20 md:mb-[90px] lg:mb-[130px] '>
           <div className='md:px-8 px-4'>
-            <h3 className='lg:text-4xl mdtext-3xl text-2xl md:mb-10 mb-8'>What’s included in all plans</h3>
-            <div className='grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 px-6 py-8 md:gap-8 lg:bg-[#17012D40] md:bg-[#17012D8A] bg-[#17012db7] rounded-[19px] relative z-30'>
+            <h3 className='lg:text-4xl mdtext-3xl text-2xl md:mb-10 mb-8'>What&apos;s included in all plans</h3>
+            <div className='grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 px-6 py-8 lg:gap-x-8 lg:gap-y-0 md:gap-y-8 lg:bg-[#17012D40] md:bg-[#17012D8A] bg-[#17012db7] rounded-[19px] relative z-30'>
               {planDetailsComponents}
             </div>
           </div>
@@ -412,7 +408,7 @@ const Pricing = () => {
           </div>
         </section> */}
         <PricingGradient 
-          title="Ready to bring your ideas to life? Schedule a call with us today!"
+          title="Bring your ideas to life schedule a call today!"
           description="Our team is here to help you succeed. Let&apos;s work together to achieve your goals and elevate your brand to new heights."
         />
       </div>
