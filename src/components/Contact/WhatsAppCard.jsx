@@ -7,7 +7,7 @@ export const WhatsAppCard = () => {
     
     return (
         <>
-            <a target='_blank' href="https://api.whatsapp.com/send/?phone=+917259191786&text=Hello%2C+thank+you+for+reaching+out.+Please+let+us+know+how+we+can+assist+you.&type=phone_number&app_absent=0"  className='cursor-pointer flex items-center gap-4 border border-brand md:max-w-[433px] max-w-full md:rounded-[37px] rounded-xl bg-[#FF00732E] md:p-4 p-3 lg:mt-8 md:mt-7 mt-6'>
+            <a target='_blank' href="https://api.whatsapp.com/send/?phone=+917259191786&text=can you help me with...&type=phone_number&app_absent=0"  className='cursor-pointer flex items-center gap-4 border border-brand md:max-w-[433px] max-w-full md:rounded-[37px] rounded-xl bg-[#FF00732E] md:p-4 p-3 lg:mt-8 md:mt-7 mt-6'>
                 <div className='md:w-[83px] w-12'>
                     <Image
                         src={WhatsAppIcon}
