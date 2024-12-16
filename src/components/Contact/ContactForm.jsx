@@ -160,7 +160,7 @@ const ContactForm = () => {
             </div>
             <div>
                 {/* DeskTop */}
-                <div className='hidden lg:block left-0 w-full absolute bottom-0 z-0'>
+                <div className='hidden lg:block left-0 w-full absolute bottom-0 z-0 '>
                     <Image
                         src={ContactLeft}
                         alt=''
