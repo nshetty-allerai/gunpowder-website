@@ -408,7 +408,7 @@ const Pricing = () => {
           </div>
         </section> */}
         <PricingGradient 
-          title="Bring your ideas to life schedule a call today!"
+          title={`"${"Bring your ideas to life schedule a call today!"}"`}
           description="Our team is here to help you succeed. Let&apos;s work together to achieve your goals and elevate your brand to new heights."
         />
       </div>
