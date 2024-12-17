@@ -177,7 +177,7 @@ const WhoWeAre = () => {
             <div className='lg:pt-[200px] md:pt-20 pt-16 relative bg-black z-10'>
                 <div className='max-w-[1200px] mx-auto'>
                     <div className='mx-4'>
-                        <h5 className='text-center lg:text-[40px] leading-[46px] font-bold hidden lg:block font-afacad'>We can <span className='text-[#FF0073]'>help </span>you With</h5>
+                        <h5 className='text-center lg:text-[40px] leading-[46px] font-bold hidden lg:block font-afacad'>We can <span className='text-[#FF0073]'>help </span>you with</h5>
                         <h5 className='text-center md:text-[40px] text-[32px] leading-[46px] font-bold lg:hidden'>Our <span className='text-[#FF0073]'> Services </span></h5>
 
                         <p className='text-center max-w-[713px] mx-auto md:text-lg text-base lg:mt-4 md:mt-3 mt-2'>We offer end-to-end services, including strategy, design, development, and marketing, to bring your vision to life and deliver impactful results.</p>
