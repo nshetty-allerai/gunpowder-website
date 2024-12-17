@@ -49,7 +49,7 @@ const page = () => {
                             </li>
 
                             <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>Cookies means small files that are placed on Your computer, mobile device or any other device by a website, containing details of your browsing history on that website among its many uses.</li>
-                            <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>Website refers to Gunpowder Innovations, accessible from <Link className='text-brand underline' href='/'>www.gunpowderinnovations.com</Link></li>
+                            <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>Website refers to Gunpowder Innovations, accessible from <Link className='text-brand underline' target='_blank' href='https://www.gunpowderinnovations.com/'>www.gunpowderinnovations.com</Link></li>
                             <li className='paragraph mt-2' style={{ listStyleType: 'disc' }}>You means the individual accessing or using the Website, or a company, or any legal entity on behalf of which such individual is accessing or using the Website, as applicable.</li>
                         </ul>
                     </div>
@@ -151,7 +151,7 @@ const page = () => {
                             <p className='paragraph'>If you have any questions about this Cookies Policy, You can contact us:</p>
                         </div>
                         <ul className='mt-5 mx-4'>
-                            <li className='paragraph' style={{ listStyleType: 'disc' }}>By email: <span className='text-brand'>reach@gunpowderinnovations.com</span></li>
+                            <li className='paragraph' style={{ listStyleType: 'disc' }}>By email: <Link target='_blank' href="mailto:reach@gunpowderinnovations.com?subject=&cc=&bcc=&body-" className='text-brand'>reach@gunpowderinnovations.com</Link></li>
                         </ul>
                     </div>
                 </div>

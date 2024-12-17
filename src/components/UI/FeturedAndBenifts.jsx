@@ -111,7 +111,7 @@ const FeturedAndBenifts = () => {
     <>
       <section className='max-w-[1440px] mx-auto '>
         <div className='md:my-20 my-10'>
-          <h3 className='font-bold text-3xl md:text-[42px] md:leading-[48px] text-center font-afacad'>Featured <span className='text-[#FF0073]'>Projects</span></h3>
+          <h3 className='font-bold text-3xl md:text-[42px] md:leading-[48px] text-center font-afacad'>Featured <span className='text-[#FF0073]'>projects</span></h3>
           <p className='text-base md:text-lg text-center mt-3 max-w-[933px] mx-auto'>Explore our featured projects showcasing innovative designs and cutting-edge solutions. Each project reflects our expertise and dedication to delivering exceptional results tailored to client needs.</p>
         </div>
 

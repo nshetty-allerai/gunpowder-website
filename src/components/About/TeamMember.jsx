@@ -6,7 +6,7 @@ const TeamMember = () => {
     return (
         <section className='max-w-[1440px] mx-auto lg:mb-[90px] mb-[70px] '>
             <div>
-                <h6 className='font-bold md:text-[40px] text-center md:leading-[46px] text-3xl font-afacad'>What Our <span className='text-brand'>Team Members</span> Say</h6>
+                <h6 className='font-bold md:text-[40px] text-center md:leading-[46px] text-3xl font-afacad'>What our <span className='text-brand'>team members</span> say</h6>
                 <p className='md:text-lg text-base text-center mt-4'>Our team is skilled in both design and programming, using the most <br className='hidden lg:block' /> popular tools and technologies.</p>
             </div>
             <div className='flex flex-col-reverse lg:flex-row border border-brand rounded-[37px] md:p-12 py-8 px-5 lg:mx-[60px] md:mx-[40px] mx-[22px] gap-[50px] mt-[54px]'>

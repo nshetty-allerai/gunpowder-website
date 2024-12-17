@@ -230,7 +230,7 @@ const page = () => {
                             <li className='paragraph' style={{ listStyleType: 'disc' }}>Portability: Request a copy of your data in a machine-readable format.</li>
                             <li className='paragraph' style={{ listStyleType: 'disc' }}>Opt-Out: California users may opt out of the sale of their data (though we do not sell data).</li>
                         </ul>
-                        <p className='paragraph mt-5'>To exercise these rights, please contact us at <b>correspondence@gunpowderinnovations.com.</b></p>
+                        <p className='paragraph mt-5'>To exercise these rights, please contact us at <b><Link target='_blank' href="mailto:reach@gunpowderinnovations.com?subject=&cc=&bcc=&body-" className='text-brand'>reach@gunpowderinnovations.com</Link></b></p>
                     </div>
                     <div>
                         <h6 className='title md:mt-10 md:mb-5 mt-8 mb-4'>7. Data Retention</h6>
@@ -255,7 +255,8 @@ const page = () => {
                     <div>
                         <h6 className='title md:mt-10 md:mb-5 mt-8 mb-4'>12. Contact Us</h6>
                         <p className='paragraph'>If you have questions or concerns about this Privacy Policy, you can contact us at:</p>
-                        <p className='paragraph mt-2'>Email: reach@gunpowderinnovations.com</p>
+                        <p className='paragraph mt-2'>Email :
+                            <Link target='_blank' href="mailto:reach@gunpowderinnovations.com?subject=&cc=&bcc=&body-" className='text-brand'> reach@gunpowderinnovations.com</Link></p>
                         <p className='paragraph mt-2'><i>Last Updated: December 9, 2024</i></p>
                     </div>
                 </div>

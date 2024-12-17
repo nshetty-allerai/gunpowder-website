@@ -6,7 +6,7 @@ const Values = () => {
   return (
     <section className='max-w-[1440px] mx-auto pt-20 lg:pt-10'>
         <div>
-            <h3 className='font-bold font-afacad text-[40px] leading-[46px] text-center'>Our Core <span className='text-brand'>Values</span></h3>
+            <h3 className='font-bold font-afacad text-[40px] leading-[46px] text-center'>Our core <span className='text-brand'>values</span></h3>
             <p className='md:text-lg text-base text-center px-4 mt-4 mb-8 max-w-[633px] mx-auto'>Just some of the value that we bring into our partnership with you…            </p>
             <div className='flex flex-nowrap scroll-for-all mx-4 pb-8 md:mx-8 lg:mx-8 overflow-x-auto items-center gap-6 lg:grid grid-cols-2'>
             
