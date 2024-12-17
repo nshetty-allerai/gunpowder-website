@@ -65,7 +65,7 @@ const Header = () => {
             </div>
             {showProducts &&
               <div className='absolute bg-[#FF007342] w-full rounded-b-[14px] border-t border-t-[#884764]'>
-                <div className='my-2 bg-[#FF00734F] mx-2 rounded-[7px] py-1'>
+                <div className='my-2 hover:bg-[#FF00734F] mx-2 rounded-[7px] py-1'>
                   <Link target='_blank' href="https://www.allerai.co.uk" className='text-lg text-center px-4 py-1 rounded-[7px]'>Allerwell</Link>
                 </div>
               </div>

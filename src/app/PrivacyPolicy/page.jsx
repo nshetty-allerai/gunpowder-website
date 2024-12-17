@@ -255,7 +255,7 @@ const page = () => {
                     <div>
                         <h6 className='title md:mt-10 md:mb-5 mt-8 mb-4'>12. Contact Us</h6>
                         <p className='paragraph'>If you have questions or concerns about this Privacy Policy, you can contact us at:</p>
-                        <p className='paragraph mt-2'>Email: correspondence@gunpowderinnovations.com</p>
+                        <p className='paragraph mt-2'>Email: reach@gunpowderinnovations.com</p>
                         <p className='paragraph mt-2'><i>Last Updated: December 9, 2024</i></p>
                     </div>
                 </div>
