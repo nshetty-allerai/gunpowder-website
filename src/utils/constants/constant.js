@@ -15,11 +15,22 @@ import VideoImage from '../../../public/images/video.png'
 
 
 import PurityaLogo from '../../../public/svg/PurityaLogo.svg'
-import PurityaMockup from '../../../public/svg/PurityaMockup.svg'
 import AllerWellLogo from '../../../public/svg/AllerWellLogo.svg'
-import AllerwellMockup from '../../../public/svg/AllerwellMockup.svg'
 import ZugoLogo from '../../../public/svg/ZugoLogo.svg'
-import ZugoMockup from '../../../public/svg/ZugoMockup.svg'
+
+// import FounderImage from '../../../public/images/founder.png'
+// import PurityaMockup from '../../../public/svg/PurityaMockup.svg'
+// import ZugoMockup from '../../../public/svg/ZugoMockup.svg'
+// import AllerwellMockup from '../../../public/svg/AllerwellMockup.svg'
+// import FounderMobileImage from '../../../public/images/founder mobile.png'
+
+const ZugoMockup = "https://gunpowderinnovations.s3.eu-west-2.amazonaws.com/images/Zugo-mockup.png"
+const PurityaMockup = "https://gunpowderinnovations.s3.eu-west-2.amazonaws.com/images/Puritya-mockup.png"
+const AllerwellMockup = "https://gunpowderinnovations.s3.eu-west-2.amazonaws.com/images/Allerwell-mockup.png"
+const FounderImage = "https://gunpowderinnovations.s3.eu-west-2.amazonaws.com/images/founder.png"
+const FounderMobileImage = "https://gunpowderinnovations.s3.eu-west-2.amazonaws.com/images/founder+mobile.png"
+
+
 
 import ContactCard from '../../../public/svg/Contact.svg'
 import VisionCard from '../../../public/svg/Vision.svg'
@@ -185,8 +196,8 @@ import Cookies from '../../../public/svg/Cookies.svg'
 import CookiesIcon from '../../../public/svg/CookiesIcon.svg'
 import blackGradient from '../../../public/svg/blackGradient.svg'
 import blackGradientMobile from '../../../public/svg/blackGradientMobile.svg'
-import FounderImage from '../../../public/images/founder.png'
-import FounderMobileImage from '../../../public/images/founder mobile.png'
+
+
 export {
     blackGradient,blackGradientMobile,
     Logo ,Menu ,Arrow ,HeroSectionImage ,BookedText ,Bom ,Hash ,Mobile ,

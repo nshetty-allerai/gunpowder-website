@@ -134,6 +134,9 @@ const FeturedAndBenifts = () => {
             <div className=''>
               <Image
                 src={PurityaMockup}
+                width={1.98}
+                height={1}
+                layout='responsive'
                 alt=''
                 className={`w-full absolute rounded-br-[20px] bottom-6 right-0`}
               />
@@ -160,6 +163,9 @@ const FeturedAndBenifts = () => {
             <div className=''>
               <Image
                 src={ZugoMockup}
+                width={1.98}
+                height={1}
+                layout='responsive'
                 alt=''
                 className={`w-full absolute bottom-[14px] right-0  z-10`}
               />
@@ -188,7 +194,10 @@ const FeturedAndBenifts = () => {
             <div className=''>
               <Image
                 src={AllerwellMockup}
-                alt=''
+                alt='Allerwell-Mockup-image'
+                width={4}
+                height={3}
+                layout='responsive'
                 className={`w-full absolute bottom-0 right-0 rounded-br-[20px] rounded-bl-[20px]`}
               />
             </div>

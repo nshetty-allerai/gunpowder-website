@@ -9,14 +9,18 @@ const AboutFounder = () => {
             <div className='border flex md:flex-row lg:gap-7 md:gap-6 gap-7 flex-col border-brand lg:p-[40px]  md:p-7 p-6 rounded-[36px] lg:mx-[60px] md:mx-8 mx-6'>
                 <div id="founder-image" className='lg:w-[25%] md:w-[30%] w-full flex justify-center items-start'>
                     <Image 
-                        // src={Founder}
                         src={FounderImage}
+                        width={24}
+                        height={25}
+                        layout='responsive'
                         className="lg:w-[296px] md:w-[208px] w-[323px] hidden md:block"
                         alt=""
                     />
                     <Image 
-                        // src={Founder}
                         src={FounderMobileImage}
+                        width={1.6}
+                        height={1}
+                        layout='responsive'
                         className="lg:w-[296px] md:w-[208px] w-[323px] md:hidden"
                         alt=""
                     />
