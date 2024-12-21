@@ -13,6 +13,7 @@
     "@ant-design/nextjs-registry": "^1.0.2",
     "@appointlet/appointlet.js": "^3.0.7",
     "@calcom/embed-react": "^1.5.1",
+    "@contentsquare/tag-sdk": "^1.1.0",
     "@emailjs/browser": "^4.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "antd": "^5.19.3",
