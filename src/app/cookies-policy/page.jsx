@@ -17,7 +17,7 @@ const page = () => {
                         alt='home icon'
                     />
                 </Link>
-                <span>/ <Link href="/PrivacyPolicy" className='font-semibold text-brand text-sm ms-3 font-afacad'>Cookies Policy</Link></span>
+                <span>/ <Link href="/cookies-policy" className='font-semibold text-brand text-sm ms-3 font-afacad'>Cookies Policy</Link></span>
             </div>
             <div className='relative z-10 max-w-[720px] mx-auto mt-5 lg:pb-[100px] md:pb-[70px] pb-10'>
                 <div className='px-8'>

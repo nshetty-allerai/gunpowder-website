@@ -139,7 +139,7 @@ const page = () => {
                         alt='home icon'
                     />
                 </Link>
-                <span>/ <Link href="/TermsAndConditions" className='font-semibold text-brand text-sm ms-3 font-afacad'>Terms and Conditions</Link></span>
+                <span>/ <Link href="/terms-and-conditions" className='font-semibold text-brand text-sm ms-3 font-afacad'>Terms and Conditions</Link></span>
             </div>
             <div className='relative z-10 max-w-[720px] mx-auto mt-5'>
                 <div className='mx-8'>

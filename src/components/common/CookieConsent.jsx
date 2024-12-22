@@ -23,7 +23,7 @@
 //                         className='w-[24px] '
 //                         alt='CookiesIcon'
 //                     />
-//                     <span className='font-urbanist'>Our website use cookies. By continuing navigating, we assume your permission to deploy cookies as detailed in our <Link className='text-brand underline font-semibold' href="/PrivacyPolicy">Privacy Policy.</Link></span>
+//                     <span className='font-urbanist'>Our website use cookies. By continuing navigating, we assume your permission to deploy cookies as detailed in our <Link className='text-brand underline font-semibold' href="/privacy-policy">Privacy Policy.</Link></span>
 //                     </div>
 //             </CookieConsent>
 //         </div>

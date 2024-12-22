@@ -92,18 +92,18 @@ const Footer = () => {
                         <Link className='text-center mt-4 md:mt-0' href='/about'>About Us</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/pricing'>Pricing</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/contact'>Contact</Link>
-                        {/* <Link className='text-center mt-4 md:mt-0' href='/CookiesPolicy'>Cookies Policy</Link> */}
-                        {/* <Link className='text-center mt-4 md:mt-0' href='/PrivacyPolicy'>Privacy</Link>
-                        <Link className='text-center mt-4 md:mt-0' href='/TermsAndConditions'>T&C</Link> */}
+                        {/* <Link className='text-center mt-4 md:mt-0' href='/cookies-policy'>Cookies Policy</Link> */}
+                        {/* <Link className='text-center mt-4 md:mt-0' href='/privacy-policy'>Privacy</Link>
+                        <Link className='text-center mt-4 md:mt-0' href='/terms-and-conditions'>T&C</Link> */}
                     </div>
                 </div>
                 <div className='border-t border-t-[#EAECF0] mt-20 mb-12 '></div>
                 <div className='flex-col 2xl:flex-row 2xl:gap-4 gap-8 flex items-center justify-between'>
                     <div className='text-center'>© 2024 Gunpowder Innovations (a trading name of AllerAI Limited). All rights reserved.</div>
                     <div className='flex flex-wrap shrink-0 gap-4 justify-center items-center mt-6 md:mt-0'>
-                        <Link className='shrink-0' href="/PrivacyPolicy">Privacy Policy</Link>
-                        <Link className='shrink-0' href="/TermsAndConditions">Terms & Conditions</Link>
-                        <Link className='shrink-0' href="/CookiesPolicy">Cookie Policy</Link>
+                        <Link className='shrink-0' href="/privacy-policy">Privacy Policy</Link>
+                        <Link className='shrink-0' href="/terms-and-conditions">Terms & Conditions</Link>
+                        <Link className='shrink-0' href="/cookies-policy">Cookie Policy</Link>
                         <div className='text-center shrink-0'>
                             <noscript>
                                 Cookie Consent by{' '}
