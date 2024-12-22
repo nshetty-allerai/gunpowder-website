@@ -8,7 +8,7 @@ import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Urbanist, Afacad } from 'next/font/google';
 import ContentSquareScript from "@/components/hotjar/ContentSquareScript";
-
+import { Analytics } from "@vercel/analytics/react"
 // Define fonts
 const afacad = Afacad({
   subsets: ['latin'],
@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
         <AntdRegistry>
           <CustomCursor />
           <Header />
+          <Analytics/>
           <SpeedInsights/>
           {children}
           <Footer />
