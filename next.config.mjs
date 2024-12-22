@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/index',
+        destination: '/',
+        permanent: true, // This makes it a 301 redirect
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
