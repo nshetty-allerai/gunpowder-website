@@ -23,11 +23,10 @@ const urbanist = Urbanist({
 });
 
 
-
-
 export const metadata = {
-  title: "Gunpowder Innovations",
-  description: "Gunpowder Innovation",
+  title: "Explore AI Wealth Management Solutions | Gunpowder Innovations",
+  description: "Gunpowder Digital offers AI-driven financial advice, custom fintech solutions, and mobile app development for wealth management and startups in the UK.",
+  keywords:["AI-Powered Financial Advice Engine", "Fintech Development Solutions", "Mvp Development for Startups", "Custom Saas Product Design", "Website design company UK", "Mobile App Solutions UK", "Custom Fintech Development", "End-to-End Fintech App Development", "Mobile App Development for WealthTech", "Android ios app development", "AI Wealth Management Solutions", "Gunpowder Digital agency UK", "Transforming Wealth Management with AI", "Gunpowder’s Client Mobile App Expertise", "Android App Development Service", "AI-Driven Wealth Engine", "Web Development Agency UK", "Web development company UK"]
 };
 
 export default function RootLayout({ children }) {
