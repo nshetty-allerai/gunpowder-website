@@ -11,7 +11,7 @@ import ScheduleCallModal from './ScheduleCallModal';
 import CookiesModal from './CookiesModal';
 import CookieConsentComponent from './CookieConsent';
 import { DownOutlined } from '@ant-design/icons';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { sendGAEvent } from '@next/third-parties/google'
 const Header = () => {
   const router = useRouter()
   const [showModal, setShowModal] = useState(false)
@@ -42,21 +42,11 @@ const Header = () => {
 
   const handleClickOnDesktopLetsTalk=()=>{
     setShowModal(true)
-    GoogleAnalytics.send({
-      event: 'click',
-      event_category: 'Let`s Talk Button',
-      event_label: 'from desktop header ',
-      value: 1, 
-    });
+    sendGAEvent('click', 'Let`s Talk Button', { value: '100' })
   }
   const handleClickOnMobileLetsTalk=()=>{
     setShowModal(true)
-    GoogleAnalytics.send({
-      event: 'click',
-      event_category: 'Let`s Talk Button',
-      event_label: 'from mobile header ',
-      value: 1, 
-    });
+    sendGAEvent('click', 'Let`s Talk Button', { value: '100' })
   }
 
   return (
