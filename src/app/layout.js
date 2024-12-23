@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
           <CustomCursor />
           <Header />
           <Analytics />
-          <SpeedInsights />
+          {/* <SpeedInsights /> */}
           {children}
           <Footer />
         </AntdRegistry>
