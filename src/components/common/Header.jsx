@@ -11,6 +11,7 @@ import ScheduleCallModal from './ScheduleCallModal';
 import CookiesModal from './CookiesModal';
 import CookieConsentComponent from './CookieConsent';
 import { DownOutlined } from '@ant-design/icons';
+import { GoogleAnalytics } from '@next/third-parties/google';
 const Header = () => {
   const router = useRouter()
   const [showModal, setShowModal] = useState(false)
@@ -38,6 +39,26 @@ const Header = () => {
     // Cleanup the event listener on unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleClickOnDesktopLetsTalk=()=>{
+    setShowModal(true)
+    GoogleAnalytics.send({
+      event: 'click',
+      event_category: 'Let`s Talk Button',
+      event_label: 'from desktop header ',
+      value: 1, 
+    });
+  }
+  const handleClickOnMobileLetsTalk=()=>{
+    setShowModal(true)
+    GoogleAnalytics.send({
+      event: 'click',
+      event_category: 'Let`s Talk Button',
+      event_label: 'from mobile header ',
+      value: 1, 
+    });
+  }
+
   return (
     <div className='max-w-[1440px] mx-auto relative z-30 bg-transparent mb-[84px]'>
       <div className={`flex fixed top-0 max-w-[1440px] mx-auto z-30 w-full justify-between items-center px-8 py-4  ${isScrolled == true ? 'bg-black/50 backdrop-blur-md' : 'bg-transparent'} `}>
@@ -71,7 +92,10 @@ const Header = () => {
               </div>
             }
           </div>
-          <Link onClick={() => setShowModal(true)} className={pathname == '#' ? 'px-6 py-2.5 rounded-3xl text-white bg-[#FF0073]' : 'px-6 py-2.5 text-white bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300  rounded-3xl hidden md:block'} href='#'>Let&apos;s Talk</Link>
+          <Link 
+            // onClick={() => setShowModal(true)} 
+            onClick={handleClickOnDesktopLetsTalk} 
+            className={pathname == '#' ? 'px-6 py-2.5 rounded-3xl text-white bg-[#FF0073]' : 'px-6 py-2.5 text-white bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300  rounded-3xl hidden md:block'} href='#'>Let&apos;s Talk</Link>
           <div onClick={() => setShow((prev) => !prev)} className='cursor-pointer'>
             <Image
               src={Menu}
@@ -123,8 +147,14 @@ const Header = () => {
               </div>
             }
           </div>
-          <hr className="w-full border-t-[1px] border-[#FF007333] md:hidden" />
-          <Link onClick={() => setShowModal(true)} className={pathname == '#' ? 'px-6 py-2.5 rounded-3xl text-white bg-[#FF0073] md:hidden' : 'px-6 py-2.5 text-white bg-[#FF0073] cursor-pointer  rounded-3xl w-full text-center md:hidden'} href='#'>Let&apos;s Talk</Link>
+          <hr className="w-full border-t-[1px] border-[#FF007333] md:hidden " />
+          <Link 
+            // onClick={() => setShowModal(true)}
+            onClick={handleClickOnMobileLetsTalk} 
+            className={pathname == '#' ? 'px-6 py-2.5 rounded-3xl text-white bg-[#FF0073] md:hidden' : 'px-6 py-2.5 text-white bg-[#FF0073] cursor-pointer  rounded-3xl w-full text-center md:hidden'}
+            href='#'>
+              Let&apos;s Talk
+            </Link>
         </div>
       </div>}
       <ScheduleCallModal
