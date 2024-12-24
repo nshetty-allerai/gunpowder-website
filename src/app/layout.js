@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     >
       <head>
         {/* <meta name="google-site-verification" content="q9TTTMXMbtfn1iksnLWDj352FOXYxoyLdp3kuLgYpzU" />  SEO person id  */}
-        <meta name="google-site-verification" content="tmTXcyt9ibwE_9V0MgVjz2mgLAtxMPzbZn7MR_ZJsAs" />
+        <meta name="google-site-verification" content="VS1xbSR4TJGbR85NRQfZzQLfliZ9kCCdyFYk-gTyBC8" />
       </head>
       <body
         id="body"
