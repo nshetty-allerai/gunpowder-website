@@ -35,6 +35,9 @@ export default function RootLayout({ children }) {
     <html lang="en"
       className={`${afacad.variable} ${urbanist.variable}`}
     >
+      <head>
+        <meta name="google-site-verification" content="q9TTTMXMbtfn1iksnLWDj352FOXYxoyLdp3kuLgYpzU" /> 
+      </head>
       <body
         id="body"
         className="font-urbanist"
@@ -48,7 +51,8 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </AntdRegistry>
-        <GoogleAnalytics gaId="G-Z2VQJ4N54Y" />
+        {/* <GoogleAnalytics gaId="G-Z2VQJ4N54Y" /> correspondence */}
+        <GoogleAnalytics gaId="G-6M931HP4XN" />
       </body>
     </html>
   );
