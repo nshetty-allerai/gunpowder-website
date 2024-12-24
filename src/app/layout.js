@@ -36,7 +36,8 @@ export default function RootLayout({ children }) {
       className={`${afacad.variable} ${urbanist.variable}`}
     >
       <head>
-        <meta name="google-site-verification" content="q9TTTMXMbtfn1iksnLWDj352FOXYxoyLdp3kuLgYpzU" /> 
+        {/* <meta name="google-site-verification" content="q9TTTMXMbtfn1iksnLWDj352FOXYxoyLdp3kuLgYpzU" />  SEO person id  */}
+        <meta name="google-site-verification" content="tmTXcyt9ibwE_9V0MgVjz2mgLAtxMPzbZn7MR_ZJsAs" />
       </head>
       <body
         id="body"
@@ -51,8 +52,8 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </AntdRegistry>
-        {/* <GoogleAnalytics gaId="G-Z2VQJ4N54Y" /> correspondence */}
-        <GoogleAnalytics gaId="G-6M931HP4XN" />
+        <GoogleAnalytics gaId="G-Z2VQJ4N54Y" /> 
+        {/* <GoogleAnalytics gaId="G-6M931HP4XN" /> SEO person id */}
       </body>
     </html>
   );
