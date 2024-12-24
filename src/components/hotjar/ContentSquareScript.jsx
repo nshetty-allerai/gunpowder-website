@@ -7,7 +7,8 @@ import { injectContentsquareScript } from '@contentsquare/tag-sdk';
 const ContentSquareScript = () => {
   useEffect(() => {
     injectContentsquareScript({
-      siteId: "5248379",
+      // siteId: "5248379", sankets id 
+      siteId: "5250429", // correspondence id
       async: true, // Optional
       defer: false, // Optional
     });
