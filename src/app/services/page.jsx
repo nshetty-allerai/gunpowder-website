@@ -10,7 +10,10 @@ export const metadata = {
   title: "Web App Development Services UK | Gunpowder Innovations",
   description: "Gunpowder Digital provides professional web design, UI/UX services, custom app development, and advanced technology solutions for businesses in the UK.",
   keywords : ["Ui and Ux Design Services", "Software Development Services","Custom App Development UK", "Website Maintenance Services", "Professional Web Design Service", "Web App Development Services", "Custom web development Services", "Digital Wealth Management Solutions", "Advanced Technology Solutions UK"],
-  canonical: 'https://www.gunpowderinnovations.com/services',
+  metadataBase: new URL("https://www.gunpowderinnovations.com"),
+  alternates: {
+    canonical: "/services",
+  },
 };
 const services = () => {
   return (

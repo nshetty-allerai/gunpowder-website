@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className='px-4 lg:px-8 md:mt-[160px] mt-[110px] relative z-10'>
         <h1 className='text-center lg:text-[96px] lg:leading-[110px] md:text-[70px] md:leading-[72px] text-[48px] leading-[62px] font-bold font-afacad '>Analyse.  Create. <br className='lg:hidden'/> <span className='text-[#FF0073]'>Innovate.</span> </h1>
         {/* <h3 className='text-center lg:text-[96px] lg:leading-[110px] md:text-[70px] md:leading-[72px] text-[48px] leading-[62px] font-bold font-afacad md:hidden'>We <span className='text-[#FF0073]'>make</span> apps, websites & brands</h3> */}
-        <p className='text-center lg:text-lg text-base font-medium lg:mt-8 md:mt-6 mt-4 font-urbanist lg:max-w-[1100px] md:max-w-[674px]  mx-auto'>We create custom apps, websites, and branding to fuel your business growth. Our experts turn ideas into reality with smart design and advanced technology, helping your business thrive online.</p>
+        <h2 className='text-center lg:text-lg text-base font-medium lg:mt-8 md:mt-6 mt-4 font-urbanist lg:max-w-[1100px] md:max-w-[674px]  mx-auto'>We create custom apps, websites, and branding to fuel your business growth. Our experts turn ideas into reality with smart design and advanced technology, helping your business thrive online.</h2>
         <div className='flex justify-center'>
           <div className='relative'>
             <Button>Let&apos;s Talk</Button>

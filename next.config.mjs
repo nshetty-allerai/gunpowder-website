@@ -7,6 +7,21 @@ const nextConfig = {
         destination: '/',
         permanent: true, // This makes it a 301 redirect
       },
+      {
+        source: '/PrivacyPolicy',
+        destination: '/privacy-policy',
+        permanent: true, // This makes it a 301 redirect
+      },
+      {
+        source: '/TermsAndConditions',
+        destination: '/terms-and-conditions',
+        permanent: true, // This makes it a 301 redirect
+      },
+      {
+        source: '/CookiesPolicy',
+        destination: '/cookies-policy',
+        permanent: true, // This makes it a 301 redirect
+      },
     ];
   },
   images: {

@@ -10,11 +10,15 @@ const HeroSection = () => {
         <section className='max-w-[1440px] mx-auto relative'>
             <div className='flex items-center justify-center md:gap-14 gap-10 md:flex-row flex-col-reverse py-10 lg:py-[150px] lg:mx-10 md:mx-6 mx-4 relative z-10'>
                 <div className='lg:max-w-[854px] md:max-w-[416px] w-full px-4'>
-                    <h5 className='lg:text-7xl md:text-5xl text-3xl font-bold font-afacad'>If you can <span className='text-brand'>dream</span> it</h5>
-                    <h5 className='lg:text-7xl md:text-5xl text-3xl font-bold font-afacad'>we can <span className='text-brand'>do</span> it</h5>
-                    <p className='mt-4'>
+                    {/* <h5 className='lg:text-7xl md:text-5xl text-3xl font-bold font-afacad'>If you can <span className='text-brand'>dream</span> it</h5>
+                    <h5 className='lg:text-7xl md:text-5xl text-3xl font-bold font-afacad'>we can <span className='text-brand'>do</span> it</h5> */}
+                    <h1 className='lg:text-7xl md:text-5xl text-3xl font-bold font-afacad'>If you can <span className='text-brand'>dream</span> it
+                        <br />
+                        we can <span className='text-brand'>do</span> it
+                    </h1>
+                    <h2 className='mt-4'>
                         We specialize in creating custom apps, websites, and brands that help businesses succeed in the digital world. Our team of innovative thinkers and tech experts brings your ideas to life with smart design and advanced technology.
-                    </p>
+                    </h2>
                     {/* <div className='flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300  text-white w-fit px-6 py-3 md:px-6 md:py-[14px] rounded-[30px] lg:mt-8 md:mt-6 mt-4 relative'>
                         <span className='text-base font-bold'>Let&apos;s Talk</span>
                         <Image
