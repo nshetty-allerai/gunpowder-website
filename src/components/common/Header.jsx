@@ -12,6 +12,7 @@ import CookiesModal from './CookiesModal';
 import CookieConsentComponent from './CookieConsent';
 import { DownOutlined } from '@ant-design/icons';
 import { sendGAEvent } from '@next/third-parties/google'
+
 const Header = () => {
   const router = useRouter()
   const [showModal, setShowModal] = useState(false)
@@ -77,7 +78,7 @@ const Header = () => {
             {showProducts &&
               <div className='absolute bg-[#FF007342] w-full rounded-b-[14px] border-t border-t-[#884764]'>
                 <div className='my-2 hover:bg-[#FF00734F] mx-2 rounded-[7px] py-1'>
-                  <Link target='_blank' href="https://www.allerai.co.uk" className='text-lg text-center px-4 py-1 rounded-[7px]'>Allerwell</Link>
+                  <Link target='_blank' href="https://www.allerwell.tech" className='text-lg text-center px-4 py-1 rounded-[7px]'>Allerwell</Link>
                 </div>
               </div>
             }
@@ -111,7 +112,7 @@ const Header = () => {
           <hr className="w-full border-t-[1px] border-[#FF007333]" />
           <Link onClick={() => setShow((prev) => !prev)} className={pathname == '/services' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} href='/services'>Our Services</Link>
           {/* <hr className="w-full border-t-[1px] border-[#FF007333] md:hidden" />
-          <Link className={pathname == '' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} target='_blank' href='https://www.allerai.co.uk'>Products</Link> */}
+          <Link className={pathname == '' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} target='_blank' href='https://www.allerwell.tech'>Products</Link> */}
           <hr className="w-full border-t-[1px] border-[#FF007333]" />
           <Link onClick={() => setShow((prev) => !prev)} className={pathname == '/about' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl  hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} href='/about'>About Us</Link>
           <hr className="w-full border-t-[1px] border-[#FF007333]" />
@@ -119,7 +120,7 @@ const Header = () => {
           <hr className="w-full border-t-[1px] border-[#FF007333]" />
           <Link onClick={() => setShow((prev) => !prev)} className={pathname == '/contact' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} href='/contact'>Contact</Link>
           <hr className="w-full border-t-[1px] border-[#FF007333] md:hidden" />
-          {/* <Link className={pathname == '' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} target='_blank' href='https://www.allerai.co.uk'>Products</Link> */}
+          {/* <Link className={pathname == '' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] w-fit' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out'} target='_blank' href='https://www.allerwell.tech'>Products</Link> */}
           <div className={`relative  hover:bg-[#FF007342] ${showProducts !== true ? 'rounded-[14px]' : 'rounded-[14px] bg-[#FF007342]'}`}>
             <div onClick={() => setShowProducts((prev) => !prev)} className='px-4 py-1 rounded-3xl hover:text-[#FF0073] transition-all duration-300 ease-in-out lg:hidden flex items-center gap-2 cursor-pointer'>
               <span className='text-lg'>Products</span>
@@ -132,7 +133,7 @@ const Header = () => {
             {showProducts &&
                 <div className='w-full rounded-b-[14px] border-t border-t-[#884764]'>
                 <div className='my-2 bg-[#FF00734F] mx-2 rounded-[7px] py-1 '>
-                  <Link target='_blank' href="https://www.allerai.co.uk" className='text-lg text-center px-4 py-1'>Allerwell</Link>
+                  <Link target='_blank' href="https://www.allerwell.tech" className='text-lg text-center px-4 py-1'>Allerwell</Link>
                 </div>
               </div>
             }
