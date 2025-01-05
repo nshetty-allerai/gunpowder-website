@@ -198,6 +198,20 @@ import blackGradient from '../../../public/svg/blackGradient.svg'
 import blackGradientMobile from '../../../public/svg/blackGradientMobile.svg'
 
 
+// blogs 
+import BlogImage from '../../../public/images/Blog image.jpeg'
+import ReadMoreArrow from '../../../public/svg/readMoreArrow.svg'
+import PrevArrow from '../../../public/svg/prevArrow.svg'
+import CopyIcon from '../../../public/svg/copyIcon.svg'
+import TwitterIcon from '../../../public/svg/twitterIcon.svg'
+import FacebookIcon from '../../../public/svg/facebookIcon.svg'
+import LinkedinIcon from '../../../public/svg/linkedinIcon.svg'
+import Blog1 from '../../../public/images/Blog1.png'
+import Blog2 from '../../../public/images/Blog2.png'
+
+import ArrowCross from '../../../public/svg/ArrowCross.svg'
+import DemoProfile from '../../../public/svg/demoProfile.svg'
+
 export {
     blackGradient,blackGradientMobile,
     Logo ,Menu ,Arrow ,HeroSectionImage ,BookedText ,Bom ,Hash ,Mobile ,
@@ -239,8 +253,10 @@ export {
     HomeDesktopGradient,AboutValue1,ValueSectionBackground,AboutValue2,AboutValue3,AboutValue4,AboutValue5,AboutValue6 ,HeroServicesHover,
     AboutUsHeroSectionHover, BombAnimationHovered, BombAnimation,maleIcon,
     HomeLeftGradient,HomeRightGradient,purityaVector ,allerAIVector ,zugoVector,Sanket ,SeheduleCallGradient ,Meeting,WhatsApp ,Close,
-    FounderImage ,Cookies ,CookiesIcon ,FounderMobileImage
+    FounderImage ,Cookies ,CookiesIcon ,FounderMobileImage,
 
+    // blogs
+    BlogImage ,ReadMoreArrow,PrevArrow ,CopyIcon,TwitterIcon ,LinkedinIcon, FacebookIcon,Blog1 ,Blog2,ArrowCross ,DemoProfile
 
 }
 
