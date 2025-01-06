@@ -40,6 +40,7 @@ export function formatContentfulData(data) {
       publishDate: data?.fields?.publishDate || "",
       type: data?.fields?.type || "",
       slug: data?.fields?.slug || "",
+      shortDescription: data?.fields?.shortDescription || "",
       imageUrl: data?.fields?.image?.fields?.file?.url
         ? `https:${data?.fields?.image?.fields?.file?.url}`
         : null, // Handle cases where the image is missing

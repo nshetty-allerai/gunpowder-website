@@ -6,10 +6,7 @@ import { BlogImage } from '@/utils/constants/constant'
 
 const page = async () => {
 
-    const spaceId = 's010gsnc7awr'; // Your space ID
-    const accessToken = 'your-access-token'; // Replace with your Contentful access token
     const url = `https://cdn.contentful.com/spaces/${process.env.SPACE_ID}/environments/master/entries`;
-    
     let resolvedData
     try {
         const res = await fetch(url, {
@@ -42,7 +39,7 @@ const page = async () => {
 
     return (
         <section>
-            <pre>{JSON.stringify(resolvedData, null, 2)}</pre>
+            {/* <pre>{JSON.stringify(resolvedData, null, 2)}</pre> */}
             <div className='max-w-[1440px] mx-auto px-8'>
                 <div className='relative z-10 flex items-center gap-3 mt-6'>
                     <Link href="/">
@@ -135,7 +132,7 @@ const page = async () => {
                                     {item?.title?.length > 40 ? `${item?.title?.slice(0, 40)}...` : item?.title}
                                 </h6>
                                 <p className='text-base font-normal mt-2'>
-                                    {item?.description?.length > 200 ? `${item?.description?.slice(0, 200)}...` : item?.description}
+                                    {item?.shortDescription}
                                     {/* {item?.description?.content?.[0]?.content?.[0]?.value?.slice(0, 220)} */}
                                 </p>
                                 <Link className='flex items-center text-brand font-semibold mt-6' href='/blog/1'>

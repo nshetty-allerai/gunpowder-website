@@ -2,24 +2,127 @@ import { ArrowCross, Blog1, Blog2, BlogImage, CopyIcon, DemoProfile, FacebookIco
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
-import { fetchEntryBySlug ,formatContentfulData } from '@/utils/utils/utils';
+import { fetchEntryBySlug, formatContentfulData } from '@/utils/utils/utils';
+import CopyButton from '@/components/blog/CopyButton';
 
-const page = async({ params }) => {
+export const generateMetadata = async ({ params }) => {
+  const { slug } = params;
+
+  // Decode and clean the slug
+  const cleanedSlug = decodeURIComponent(slug).replace(/%2B/g, '+');
+
+  // Fetch blog entry by slug
+  const response = await fetchEntryBySlug(cleanedSlug);
+  const data = await formatContentfulData(response);
+
+  // Construct page URL
+  const pageUrl = `http://localhost:3000/blog/${encodeURIComponent(cleanedSlug)}`;
+
+  // console.log("Generated Metadata:", 
+  //   {
+  //   title: data.title,
+  //   description: data.shortDescription || "Read this amazing blog post!",
+  //   url: pageUrl,
+  // });
+
+  // Return metadata
+  return {
+    title: data.title,
+    description: data.shortDescription || "Read this amazing blog post!",
+    openGraph: {
+      title: data.title,
+      description: data.shortDescription || "Read this amazing blog post!",
+      url: pageUrl,
+      images: [
+        {
+          url: data.imageUrl || "https://example.com/default-og-image.jpg",
+          width: 800,
+          height: 600,
+          alt: data.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: data.title,
+      description: data.shortDescription || "Read this amazing blog post!",
+      images: [data.imageUrl || "https://example.com/default-og-image.jpg"],
+    },
+  };
+};
+
+
+
+const page = async ({ params }) => {
 
   const { slug } = params;
 
   const cleanedSlug = decodeURIComponent(slug).replace(/%2B/g, '+');
-  
+
   const response = await fetchEntryBySlug(cleanedSlug);
-  
+
   const data = await formatContentfulData(response);
-  console.log(data)
-  
- 
- 
+  // console.log(data)
+
+
+
+
+  const fetchCategory = async () => {
+    const url = `https://cdn.contentful.com/spaces/${process.env.SPACE_ID}/environments/master/entries`;
+    // let resolvedData
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'Authorization': `Bearer ${process.env.ACCESS_TOKEN}`,
+        },
+      });
+      if (!res.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      // Parse the JSON response
+      const apiResponse = await res.json();
+      // Format the response
+      let resolvedData = apiResponse.items.map((item) => {
+        // Resolve the image from includes
+        const imageId = item.fields.image?.sys?.id;
+        const imageAsset = apiResponse.includes.Asset.find(
+          (asset) => asset.sys.id === imageId
+        );
+
+        const authorImageId = item.fields.authourProfile?.sys?.id;
+        const authorImageAsset = apiResponse.includes.Asset.find(
+          (asset) => asset.sys.id === authorImageId
+        );
+
+        return {
+          ...item?.fields,
+          imageUrl: imageAsset?.fields?.file?.url
+            ? `https:${imageAsset?.fields?.file?.url}`
+            : null,
+          authourProfile: authorImageAsset?.fields?.file?.url
+            ? `https:${authorImageAsset?.fields?.file?.url}`
+            : null,
+
+        };
+      });
+      return resolvedData
+    } catch (error) {
+
+    }
+  }
+
+
+  const blogs = await fetchCategory()
+
+  // console.log(blogs)
+
+
+
+
+
   return (
     <section>
-       {/* <pre>{JSON.stringify(response, null, 2)}</pre> */}
+      {/* <pre>{JSON.stringify(response, null, 2)}</pre> */}
       <div className='max-w-[1440px] mx-auto px-8'>
         <div className='relative z-10 flex items-center gap-3 mt-6'>
           <Link href="/">
@@ -30,7 +133,7 @@ const page = async({ params }) => {
             />
           </Link>
           <span>/ <Link href="/blog" className='font-semibold text-brand text-sm font-afacad'>Blogs</Link></span>
-          <span>/ <Link href="/blog/UX review..." className='font-semibold text-brand text-sm font-afacad'>{slug.replace(/%2B/g, ' ')}</Link></span>
+          <span>/ <span className='font-semibold text-brand text-sm font-afacad'>{slug.replace(/%2B/g, ' ')}</span></span>
         </div>
         <div className='lg:mt-[112px] mt-[44px]'>
           <h1 className='text-white font-semibold lg:text-6xl md:text-5xl text-4xl pt-4'>{data?.title}</h1>
@@ -60,7 +163,7 @@ const page = async({ params }) => {
                 <span className='text-lg font-medium text-white'>{data?.publishDate}</span>
               </div>
             </div>
-            <div className='hidden lg:flex gap-3'>
+            {/* <div className='hidden lg:flex gap-3'>
               <div className='flex items-center cursor-pointer gap-2 border border-brand rounded-lg px-4 py-2 bg-[#FF00732E] font-semibold text-brand'>
                 <Image
                   src={CopyIcon}
@@ -86,7 +189,8 @@ const page = async({ params }) => {
                   alt='linkedin icon'
                 />
               </div>
-            </div>
+            </div> */}
+            <CopyButton />
           </div>
           {/* <div className='max-w-[720px] mx-auto lg:mb-[97px] mb-[64px]'>
             <h3 className='font-semibold md:text-3xl text-2xl'>Introduction</h3>
@@ -131,8 +235,7 @@ const page = async({ params }) => {
             </p>
           </div> */}
 
-          <div className='pb-14' dangerouslySetInnerHTML={{ __html: data?.description }}></div>
-
+          <div className='pb-14 bg-black text-white' dangerouslySetInnerHTML={{ __html: data?.description }}></div>
           <div className='hidden lg:block'>
             <div className='border-t border-[#EAECF0]'></div>
             <div className='grid grid-cols-3 gap-10 p-20'>
@@ -140,49 +243,56 @@ const page = async({ params }) => {
                 <span className='text-brand font-semibold text-base'>Latest</span>
                 <h6 className='text-4xl text-white font-semibold mt-3'>From the blogs</h6>
                 <p className='text-lg mt-5'>The latest industry news, interviews, technologies, and resources.</p>
-                <button className='px-5 py-3 bg-brand text-white font-semibold text-base rounded-lg mt-10'>View all posts</button>
+                <Link href='/blog' className='px-5 py-3 bg-brand text-white font-semibold text-base rounded-lg mt-10 block w-fit'>View all posts</Link>
               </div>
-              <div>
-                <Image
-                  src={Blog1}
-                  alt='blog image'
-                  className='w-full h-[240px] object-cover rounded-xl'
-                />
-                <div className='flex gap-1 items-center bg-white w-fit py-1 ps-1  rounded-2xl mt-9'>
-                  <span className='px-2 py-0.5 bg-brand text-white rounded-2xl text-[12px] leading-4 '>Design</span>
-                  <span className='px-2 py-0.5 text-brand text-[12px] leading-4'>8 min read</span>
-                </div>
-                <div className='flex gap-2 justify-between'>
-                  <h6 className='font-semibold text-2xl mt-4'>{data?.title}</h6>
+              {blogs && blogs.slice(0,2).map((item, index) => (
+                <Link
+                  href={`/blog/${item?.slug}`}
+                  className='block cursor-pointer'
+                  key={item?.slug}
+                >
                   <Image
-                    src={ArrowCross}
+                    src={item?.imageUrl}
                     alt='blog image'
-                    className='w-6 shrink-0'
+                    className='w-full h-[240px] object-cover rounded-xl'
+                    width={400}
+                    height={240}
                   />
-                </div>
-                {/* <p className='mt-2'>How do you create compelling presentations that wow your colleagues and impress your managers?</p> */}
-                <div className='flex items-center gap-3 mt-6'>
-                  <div>
-                    {/* <Image
-                      src={DemoProfile}
-                      alt='blog image'
-                      className='w-10 h-10 rounded-full'
-                    /> */}
+                  <div className='flex gap-1 items-center bg-white w-fit py-1 ps-1  rounded-2xl mt-9'>
+                    <span className='px-2 py-0.5 bg-brand text-white rounded-2xl text-[12px] leading-4 '>{item?.type}</span>
+                    <span className='px-2 py-0.5 text-brand text-[12px] leading-4'>{item?.readTime}</span>
+                  </div>
+                  <div className='flex gap-2 justify-between'>
+                    <h6 className='font-semibold text-2xl mt-4'>{item?.title}</h6>
                     <Image
-                      src={data?.imageUrl}
+                      src={ArrowCross}
                       alt='blog image'
-                      className='w-10 h-10 rounded-full'
-                      width={40}
-                      height={40}
+                      className='w-6 shrink-0'
                     />
                   </div>
-                  <div className='flex flex-col text-sm'>
-                    <span>{data?.author}</span>
-                    <span>{data?.publishDate}</span>
+                  {/* <p className='mt-2'>How do you create compelling presentations that wow your colleagues and impress your managers?</p> */}
+                  <div className='flex items-center gap-3 mt-6'>
+                    <div>
+                      {/* <Image
+                          src={DemoProfile}
+                          alt='blog image'
+                          className='w-10 h-10 rounded-full'
+                        /> */}
+                      <Image
+                        src={item?.authourProfile}
+                        alt='blog image'
+                        className='w-10 h-10 rounded-full'
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                    <div className='flex flex-col text-sm'>
+                      <span>{item?.authour}</span>
+                      <span>{item?.publishDate}</span>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div>
+                </Link>))}
+              {/* <div>
                 <Image
                   src={Blog1}
                   alt='blog image'
@@ -214,11 +324,12 @@ const page = async({ params }) => {
                     <span>20 Jan 2025</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
+      {/* <pre>{JSON.stringify(blogs, null, 2)}</pre> */}
     </section>
   )
 }
