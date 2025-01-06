@@ -212,6 +212,9 @@ import Blog2 from '../../../public/images/Blog2.png'
 import ArrowCross from '../../../public/svg/ArrowCross.svg'
 import DemoProfile from '../../../public/svg/demoProfile.svg'
 
+import BlogPageGradientRight from '../../../public/svg/blogPageGradientRight.svg'
+import BlogPageGradientLeft from '../../../public/svg/blogPageGradientLeft.svg'
+
 export {
     blackGradient,blackGradientMobile,
     Logo ,Menu ,Arrow ,HeroSectionImage ,BookedText ,Bom ,Hash ,Mobile ,
@@ -256,7 +259,8 @@ export {
     FounderImage ,Cookies ,CookiesIcon ,FounderMobileImage,
 
     // blogs
-    BlogImage ,ReadMoreArrow,PrevArrow ,CopyIcon,TwitterIcon ,LinkedinIcon, FacebookIcon,Blog1 ,Blog2,ArrowCross ,DemoProfile
+    BlogImage ,ReadMoreArrow,PrevArrow ,CopyIcon,TwitterIcon ,LinkedinIcon, FacebookIcon,Blog1 ,Blog2,ArrowCross ,DemoProfile,
+    BlogPageGradientLeft,BlogPageGradientRight
 
 }
 

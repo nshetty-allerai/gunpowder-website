@@ -1,4 +1,4 @@
-import { HomeIcon, PrevArrow, ReadMoreArrow } from '@/utils/constants/constant'
+import { BlogPageGradientLeft, BlogPageGradientRight, HomeIcon, PrevArrow, ReadMoreArrow } from '@/utils/constants/constant'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -40,7 +40,7 @@ const page = async () => {
     return (
         <section>
             {/* <pre>{JSON.stringify(resolvedData, null, 2)}</pre> */}
-            <div className='max-w-[1440px] mx-auto px-8'>
+            <div className='max-w-[1440px] mx-auto px-8 relative z-10'>
                 <div className='relative z-10 flex items-center gap-3 mt-6'>
                     <Link href="/">
                         <Image
@@ -51,12 +51,12 @@ const page = async () => {
                     </Link>
                     <span>/ <Link href="/blog" className='font-semibold text-brand text-sm font-afacad'>Blogs</Link></span>
                 </div>
-                <div className='mb-[64px] lg:mb-[84px] lg:mt-10 mt-[50px]'>
+                <div className='relative z-10 mb-[64px] lg:mb-[84px] lg:mt-10 mt-[50px]'>
                     <div className='font-semibold text-brand text-sm font-afacad'>Blogs</div>
                     <div className='font-semibold text-white text-4xl lg:text-6xl mt-3 font-afacad'>Blogs</div>
                 </div>
 
-                <div className='hidden lg:flex flex-wrap mb-[64px]'>
+                <div className='relative z-10 hidden lg:flex flex-wrap mb-[64px]'>
                     <div className='shrink-0 px-3.5 py-2.5 text-white bg-brand font-semibold rounded-[32px] me-3 cursor-pointer'>
                         View all
                     </div>
@@ -64,13 +64,13 @@ const page = async () => {
                         Design
                     </div> */}
                 </div>
-                <div className='lg:hidden mb-[48px]'>
+                <div className='relative z-10 lg:hidden mb-[48px]'>
                     <select className='w-full rounded-lg px-3.5 py-2.5 font-semibold text-[#101828]'>
                         <option value=''>View all</option>
                         {/* <option value=''>Design</option> */}
                     </select>
                 </div>
-                <div className='grid lg:grid-cols-2 grid-cols-1 gap-8'>
+                <div className=' grid lg:grid-cols-2 grid-cols-1 gap-8 relative z-10'>
                     {/* {Array.from({ length: 8 }).map((_, index) => (
                         <div key={index}>
                             <div className='relative'>
@@ -103,7 +103,7 @@ const page = async () => {
                             </div>
                         </div>))} */}
                     {resolvedData&&resolvedData.map((item, index) => (
-                        <div key={index}>
+                        <div key={index} className='relative z-10'>
                             <div className='relative'>
                                 <Image
                                     className='md:h-[280px] h-[230px] w-full object-cover rounded-[20px]'
@@ -146,7 +146,7 @@ const page = async () => {
                             </div>
                         </div>))}
                 </div>
-                <div className='w-full border-t border-[#EAECF0] mt-12 lg:mb-[96px] mb-[78px]'>
+                <div className='relative z-10 w-full border-t border-[#EAECF0] mt-12 lg:mb-[96px] mb-[78px]'>
                     <div className='flex items-center justify-between py-6'>
                         <div className='flex items-center gap-2 font-semibold text-brand text-sm border border-brand rounded-lg px-3.5 py-2.5 cursor-pointer'>
                             <Image
@@ -179,6 +179,19 @@ const page = async () => {
 
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <Image
+                    src={BlogPageGradientRight}
+                    alt='blog page gradient right'
+                    className='absolute top-0 right-0 z-0'
+                    />
+                    <Image
+                    src={BlogPageGradientLeft}
+                    alt='blog page gradient left'
+                    className='absolute bottom-0 left-0 z-0'
+                    />
                 </div>
             </div>
         </section>

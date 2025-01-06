@@ -1,4 +1,4 @@
-import { ArrowCross, Blog1, Blog2, BlogImage, CopyIcon, DemoProfile, FacebookIcon, HomeIcon, LinkedinIcon, TwitterIcon } from '@/utils/constants/constant';
+import { ArrowCross, Blog1, Blog2, BlogImage, BlogPageGradientLeft, BlogPageGradientRight, CopyIcon, DemoProfile, FacebookIcon, HomeIcon, LinkedinIcon, TwitterIcon } from '@/utils/constants/constant';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -123,7 +123,7 @@ const page = async ({ params }) => {
   return (
     <section>
       {/* <pre>{JSON.stringify(response, null, 2)}</pre> */}
-      <div className='max-w-[1440px] mx-auto px-8'>
+      <div className='max-w-[1440px] mx-auto px-8 relative'>
         <div className='relative z-10 flex items-center gap-3 mt-6'>
           <Link href="/">
             <Image
@@ -135,7 +135,7 @@ const page = async ({ params }) => {
           <span>/ <Link href="/blog" className='font-semibold text-brand text-sm font-afacad'>Blogs</Link></span>
           <span>/ <span className='font-semibold text-brand text-sm font-afacad'>{slug.replace(/%2B/g, ' ')}</span></span>
         </div>
-        <div className='lg:mt-[112px] mt-[44px]'>
+        <div className='relative z-10 lg:mt-[112px] mt-[44px]'>
           <h1 className='text-white font-semibold lg:text-6xl md:text-5xl text-4xl pt-4'>{data?.title}</h1>
           {/* <h6 className='lg:text-xl text-lg lg:mt-6 mt-4'>How do you create compelling presentations that wow your colleagues and impress your managers?</h6> */}
           <div className='mt-16'>
@@ -235,7 +235,7 @@ const page = async ({ params }) => {
             </p>
           </div> */}
 
-          <div className='pb-14 bg-black text-white' dangerouslySetInnerHTML={{ __html: data?.description }}></div>
+          <div className='pb-14 bg-transparent text-white' dangerouslySetInnerHTML={{ __html: data?.description }}></div>
           <div className='hidden lg:block'>
             <div className='border-t border-[#EAECF0]'></div>
             <div className='grid grid-cols-3 gap-10 p-20'>
@@ -245,7 +245,7 @@ const page = async ({ params }) => {
                 <p className='text-lg mt-5'>The latest industry news, interviews, technologies, and resources.</p>
                 <Link href='/blog' className='px-5 py-3 bg-brand text-white font-semibold text-base rounded-lg mt-10 block w-fit'>View all posts</Link>
               </div>
-              {blogs && blogs.slice(0,2).map((item, index) => (
+              {blogs && blogs.slice(0, 2).map((item, index) => (
                 <Link
                   href={`/blog/${item?.slug}`}
                   className='block cursor-pointer'
@@ -292,41 +292,30 @@ const page = async ({ params }) => {
                     </div>
                   </div>
                 </Link>))}
-              {/* <div>
-                <Image
-                  src={Blog1}
-                  alt='blog image'
-                  className='w-full h-[240px] object-cover rounded-xl'
-                />
-                <div className='flex gap-1 items-center bg-white w-fit py-1 ps-1  rounded-2xl mt-9'>
-                  <span className='px-2 py-0.5 bg-brand text-white rounded-2xl text-[12px] leading-4 '>Design</span>
-                  <span className='px-2 py-0.5 text-brand text-[12px] leading-4'>8 min read</span>
-                </div>
-                <div className='flex gap-2 justify-between'>
-                  <h6 className='font-semibold text-2xl mt-4'>UX review presentations</h6>
-                  <Image
-                    src={ArrowCross}
-                    alt='blog image'
-                    className='w-6 shrink-0'
-                  />
-                </div>
-                <p className='mt-2'>How do you create compelling presentations that wow your colleagues and impress your managers?</p>
-                <div className='flex items-center gap-3 mt-6'>
-                  <div>
-                    <Image
-                      src={DemoProfile}
-                      alt='blog image'
-                      className='w-10 h-10 rounded-full'
-                    />
-                  </div>
-                  <div className='flex flex-col text-sm'>
-                    <span>Sanket A</span>
-                    <span>20 Jan 2025</span>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
+        </div>
+        <div>
+          <Image
+            src={BlogPageGradientRight}
+            alt='blog page gradient right'
+            className='absolute top-0 right-0 z-0'
+          />
+          <Image
+            src={BlogPageGradientLeft}
+            alt='blog page gradient left'
+            className='absolute bottom-0 left-0 z-0'
+          />
+          {/* <Image
+            src={BlogPageGradientRight}
+            alt='blog page gradient right'
+            className='absolute bottom-0 right-0 z-0'
+          />
+          <Image
+            src={BlogPageGradientLeft}
+            alt='blog page gradient left'
+            className='absolute bottom-0 left-0 z-0'
+          /> */}
         </div>
       </div>
       {/* <pre>{JSON.stringify(blogs, null, 2)}</pre> */}
