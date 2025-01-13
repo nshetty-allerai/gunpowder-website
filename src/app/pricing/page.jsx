@@ -250,8 +250,8 @@ import PricingGradient from './PricingGradient';
 const Questions = dynamic(() => import('@/components/UI/Questions'), { suspense: true });
 
 export const metadata = {
-  title: "Web App Development Services UK | Gunpowder Innovations",
-  description: "Gunpowder Digital provides professional web design, UI/UX services, custom app development, and advanced technology solutions for businesses in the UK.",
+  title: "Pricing for Design & Development Services | Gunpowder Innovations",
+  description: "Explore our detailed pricing plans designed to meet various business needs, offering flexible options to help you choose the best solution for your requirements.",
   keywords : ["Ui and Ux Design Services", "Software Development Services","Custom App Development UK", "Website Maintenance Services", "Professional Web Design Service", "Web App Development Services", "Custom web development Services", "Digital Wealth Management Solutions", "Advanced Technology Solutions UK"],
   metadataBase: new URL("https://www.gunpowderinnovations.com"),
   alternates: {
@@ -373,7 +373,7 @@ const Pricing = () => {
         <section className='max-w-[1440px] mx-auto lg:mt-[90px] md:mt-[120px] mt-[100px] lg:mb-[40px] md:mb-[30px] mb-[20px]'>
           <div className='flex items-center justify-between lg:px-14 px-6'>
             <div>
-              <h3 className='font-semibold lg:text-[64px] lg:leading-[80px] md:text-5xl text-4xl font-afacad'>Pricing plans</h3>
+              <h1 className='font-semibold lg:text-[64px] lg:leading-[80px] md:text-5xl text-4xl font-afacad'>Pricing plans</h1>
               <p className='lg:text-xl md:text-base text-lg md:mt-1 mt-4'>Simple, transparent pricing for whatever needs your business has</p>
               {/* <h3 className='font-medium text-2xl md:text-[32px] md:leading-[50px] lg:text-5xl lg:mt-14 mt-8'>Plans that suits for the design works</h3> */}
             </div>

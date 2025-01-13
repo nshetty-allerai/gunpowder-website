@@ -6,8 +6,8 @@ import React from 'react'
 // title
 
 export const metadata = {
-    title: "Web App Development Services UK | Gunpowder Innovations",
-    description: "Gunpowder Digital provides professional web design, UI/UX services, custom app development, and advanced technology solutions for businesses in the UK.",
+    title: "Your Go-To Guide for Cookies Policy | Gunpowder Innovations",
+    description: "Learn how we use cookies to enhance user experience, improve website functionality, and maintain security, while respecting your privacy preferences.",
     keywords : ["Ui and Ux Design Services", "Software Development Services","Custom App Development UK", "Website Maintenance Services", "Professional Web Design Service", "Web App Development Services", "Custom web development Services", "Digital Wealth Management Solutions", "Advanced Technology Solutions UK"],
     metadataBase: new URL("https://www.gunpowderinnovations.com"),
     alternates: {

@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 
 export const metadata = {
-    title: "Web App Development Services UK | Gunpowder Innovations",
-    description: "Gunpowder Digital provides professional web design, UI/UX services, custom app development, and advanced technology solutions for businesses in the UK.",
+    title: "Legal Terms for Digital Services | Gunpowder Innovations",
+    description: "Familiarize yourself with the terms and conditions governing the use of our services, ensuring transparency and a mutual understanding of our policies.",
     keywords : ["Ui and Ux Design Services", "Software Development Services","Custom App Development UK", "Website Maintenance Services", "Professional Web Design Service", "Web App Development Services", "Custom web development Services", "Digital Wealth Management Solutions", "Advanced Technology Solutions UK"],
     metadataBase: new URL("https://www.gunpowderinnovations.com"),
     alternates: {
