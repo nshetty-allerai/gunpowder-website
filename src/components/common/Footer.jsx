@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from 'react'
-import { Logo } from '@/utils/constants/constant'
+import { facebookSocialIcon, instagramIcon, linkedinSocialIcon, Logo } from '@/utils/constants/constant'
 import Image from 'next/image'
 import Link from 'next/link'
 const Footer = () => {
@@ -96,6 +96,30 @@ const Footer = () => {
                         {/* <Link className='text-center mt-4 md:mt-0' href='/privacy-policy'>Privacy</Link>
                         <Link className='text-center mt-4 md:mt-0' href='/terms-and-conditions'>T&C</Link> */}
                     </div>
+                </div>
+                <div className='flex justify-center items-center gap-2 mt-8'>
+                    <Link target='_blank' href='https://www.instagram.com/gunpowderinnovations/'>
+                        <Image
+                            src={instagramIcon}
+                            className='cursor-pointer'
+                            alt='insatgram icon'
+                        />
+                    </Link>
+                    <Link target='_blank' href='https://www.linkedin.com/company/gunpowderinnovations/'>
+                        <Image
+                            src={linkedinSocialIcon}
+                            className='cursor-pointer'
+                            alt='linkedin icon'
+                        />
+                    </Link>
+                    <Link target='_blank' href='https://www.facebook.com/profile.php?id=61571519370662'>
+                        <Image
+                            src={facebookSocialIcon}
+                            className='cursor-pointer'
+                            alt='facebook icon'
+                        />
+                    </Link>
+
                 </div>
                 <div className='border-t border-t-[#EAECF0] mt-20 mb-12 '></div>
                 <div className='flex-col 2xl:flex-row 2xl:gap-4 gap-8 flex items-center justify-between'>

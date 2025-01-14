@@ -215,6 +215,10 @@ import DemoProfile from '../../../public/svg/demoProfile.svg'
 import BlogPageGradientRight from '../../../public/svg/blogPageGradientRight.svg'
 import BlogPageGradientLeft from '../../../public/svg/blogPageGradientLeft.svg'
 
+import instagramIcon from '../../../public/svg/instagramIcon.svg'
+import linkedinSocialIcon from '../../../public/svg/linkedinSocialIcon.svg'
+import facebookSocialIcon from '../../../public/svg/facebookSocialIcon.svg'
+
 export {
     blackGradient,blackGradientMobile,
     Logo ,Menu ,Arrow ,HeroSectionImage ,BookedText ,Bom ,Hash ,Mobile ,
@@ -260,7 +264,7 @@ export {
 
     // blogs
     BlogImage ,ReadMoreArrow,PrevArrow ,CopyIcon,TwitterIcon ,LinkedinIcon, FacebookIcon,Blog1 ,Blog2,ArrowCross ,DemoProfile,
-    BlogPageGradientLeft,BlogPageGradientRight
+    BlogPageGradientLeft,BlogPageGradientRight ,instagramIcon ,linkedinSocialIcon ,facebookSocialIcon
 
 }
 
