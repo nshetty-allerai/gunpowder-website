@@ -17,7 +17,7 @@ const HeroSection = () => {
                         we can <span className='text-brand'>do</span> it
                     </h1>
                     <h2 className='mt-4'>
-                        We specialize in creating custom apps, websites, and brands that help businesses succeed in the digital world. Our team of innovative thinkers and tech experts brings your ideas to life with smart design and advanced technology.
+                        We specialise in creating custom apps, websites, and brands that help businesses succeed in the digital world. Our team of innovative thinkers and tech experts brings your ideas to life with smart design and advanced technology.
                     </h2>
                     {/* <div className='flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300  text-white w-fit px-6 py-3 md:px-6 md:py-[14px] rounded-[30px] lg:mt-8 md:mt-6 mt-4 relative'>
                         <span className='text-base font-bold'>Let&apos;s Talk</span>

@@ -18,7 +18,7 @@ const HeroSection = () => {
                     {/* <h5 className='lg:text-7xl md:text-[42px] md:leading-[52px] text-3xl font-bold font-afacad'>We&apos;re a <span className='text-brand'>creative</span> team</h5>
                     <h5 className='lg:text-7xl md:text-[42px] md:leading-[52px] text-3xl font-bold font-afacad'>based in <span className='text-brand'>London</span></h5> */}
                     <p className='mt-4'>
-                        We specialize in creating custom apps, websites, and brands that help businesses thrive in the digital world. Our team of innovative thinkers and tech experts brings your ideas to life with smart design and cutting-edge technology.
+                        We specialise in creating custom apps, websites, and brands that help businesses thrive in the digital world. Our team of innovative thinkers and tech experts brings your ideas to life with smart design and cutting-edge technology.
                     </p>
                     {/* <div className='lg:hidden flex items-center gap-2 bg-[#FF0073] cursor-pointer hover:bg-hover-gradient transition-all duration-300  text-white w-fit px-6 py-3 md:px-6 md:py-[14px] rounded-[30px] lg:mt-8 md:mt-6 mt-4 relative'>
                         <span className='text-base font-bold'>Let&apos;s Talk</span>
