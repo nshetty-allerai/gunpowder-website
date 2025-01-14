@@ -36,7 +36,7 @@ const Questions = () => {
     const [questionJson, setQuestionJson] = useState([
         {
             question: 'What services do you offer?',
-            answer: 'We specialize in UX/UI Design, Software Development, and Mobile App Development. Our team creates tailored digital solutions for your business, from intuitive interfaces and user experiences to robust software and mobile applications.'
+            answer: 'We specialise in UX/UI Design, Software Development, and Mobile App Development. Our team creates tailored digital solutions for your business, from intuitive interfaces and user experiences to robust software and mobile applications.'
         },
         {
             question: 'What is your design and development process?',
@@ -47,8 +47,8 @@ const Questions = () => {
             answer: 'The timeline varies by project scope but typically ranges from a week to two months for complex builds'
         },
         {
-            question: 'What industries do you specialize in?',
-            answer: 'We specialize in industries like e-commerce, healthcare, fintech, and digital marketing, delivering tailored solutions for each sector.'
+            question: 'What industries do you specialise in?',
+            answer: 'We specialise in industries like e-commerce, healthcare, fintech, and digital marketing, delivering tailored solutions for each sector.'
         },
         {
             question: 'Can you work with our existing team?',

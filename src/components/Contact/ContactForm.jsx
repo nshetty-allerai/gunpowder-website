@@ -79,7 +79,7 @@ const ContactForm = () => {
                 <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-[73px] gap-[30px] md:px-8 px-4'>
                     <div className='relative z-20'>
                         <h1 className='font-bold lg:text-[84px] lg:leading-[90px] md:text-[48px] md:leading-[90px] text-4xl font-afacad'>Contact with us</h1>
-                        <p className='font-medium lg:text-lg md:text-base text-sm md:mt-7 mt-3'>Wer&apos;e here to connect, collaborate and bring your ideas to life weather you&apos;re ready to embark on an exciting project or simply wish to explore how we can support your vision</p>
+                        <p className='font-medium lg:text-lg md:text-base text-sm md:mt-7 mt-3'>We&apos;re here to connect, collaborate and bring your ideas to life weather you&apos;re ready to embark on an exciting project or simply wish to explore how we can support your vision</p>
                         <SendMail/>
                         <WhatsAppCard/>
                     </div>

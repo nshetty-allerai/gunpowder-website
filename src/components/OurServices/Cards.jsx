@@ -60,7 +60,7 @@ const Cards = () => {
       {/* card 3 */}
       <div className='flex flex-col lg:flex-row lg:gap-20 md:gap-16 gap-10 bg-[#013F624A] lg:px-14 lg:py-28 md:px-12 md:py-12 px-7 py-7'>
         <div className='lg:w-[65%]'>
-          <h4 className='font-bold text-[56px] leading-[74px] font-afacad'><span className='text-[#00AEE3] '>Mobile App </span> Design & Developement
+          <h4 className='font-bold text-[56px] leading-[74px] font-afacad'><span className='text-[#00AEE3] '>Mobile App </span> Design & Development
           </h4>
           <div className='flex flex-wrap  items-center gap-3 my-5'>
             <span className='bg-[#012539] py-2 px-3 rounded-3xl font-semibold'>Healthcare</span>

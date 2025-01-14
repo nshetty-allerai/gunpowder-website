@@ -33,7 +33,7 @@ const Process = () => {
     },
     {
       icon: <Deployment />,
-      title: "Deployement",
+      title: "Deployment",
       description: "After QA and client approval, we deploy the code, guiding hosting choices from servers to the cloud."
     }
   ]
