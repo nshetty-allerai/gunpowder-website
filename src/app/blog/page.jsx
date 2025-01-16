@@ -15,6 +15,7 @@ const page = async () => {
                 headers: {
                     'Authorization': `Bearer ${process.env.ACCESS_TOKEN}`,
                 },
+                cache: 'no-store',
             });
             if (!res.ok) {
                 throw new Error('Failed to fetch data');
