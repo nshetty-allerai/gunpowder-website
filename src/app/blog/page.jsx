@@ -1,3 +1,4 @@
+
 import { BlogPageGradientLeft, BlogPageGradientRight, HomeIcon, PrevArrow, ReadMoreArrow } from '@/utils/constants/constant'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -6,36 +7,42 @@ import { BlogImage } from '@/utils/constants/constant'
 
 const page = async () => {
 
-    const url = `https://cdn.contentful.com/spaces/${process.env.SPACE_ID}/environments/master/entries`;
-    let resolvedData
-    try {
-        const res = await fetch(url, {
-            headers: {
-                'Authorization': `Bearer ${process.env.ACCESS_TOKEN}`,
-            },
-        });
-        if (!res.ok) {
-            throw new Error('Failed to fetch data');
+    const fetchBlog = async () => {
+        const url = `https://cdn.contentful.com/spaces/${process.env.SPACE_ID}/environments/master/entries`;
+        let resolvedData
+        try {
+            const res = await fetch(url, {
+                headers: {
+                    'Authorization': `Bearer ${process.env.ACCESS_TOKEN}`,
+                },
+            });
+            if (!res.ok) {
+                throw new Error('Failed to fetch data');
+            }
+            // Parse the JSON response
+            const apiResponse = await res.json();
+            // Format the response
+            resolvedData = apiResponse.items.map((item) => {
+                // Resolve the image from includes
+                const imageId = item.fields.image?.sys?.id;
+                const imageAsset = apiResponse.includes.Asset.find(
+                    (asset) => asset.sys.id === imageId
+                );
+                return {
+                    ...item.fields,
+                    imageUrl: imageAsset?.fields.file.url
+                        ? `https:${imageAsset.fields.file.url}`
+                        : null,
+                };
+            });
+            return resolvedData
+        } catch (error) {
+    
         }
-        // Parse the JSON response
-        const apiResponse = await res.json();
-        // Format the response
-         resolvedData = apiResponse.items.map((item) => {
-            // Resolve the image from includes
-            const imageId = item.fields.image?.sys?.id;
-            const imageAsset = apiResponse.includes.Asset.find(
-                (asset) => asset.sys.id === imageId
-            );
-            return {
-                ...item.fields,
-                imageUrl: imageAsset?.fields.file.url
-                    ? `https:${imageAsset.fields.file.url}`
-                    : null,
-            };
-        });
-    } catch (error) {
-
     }
+
+    const blogs = await fetchBlog()
+
 
     return (
         <section>
@@ -102,7 +109,7 @@ const page = async () => {
                                 </Link>
                             </div>
                         </div>))} */}
-                    {resolvedData&&resolvedData.map((item, index) => (
+                    {blogs && blogs.map((item, index) => (
                         <div key={index} className='relative z-10'>
                             <div className='relative'>
                                 <Image
@@ -112,7 +119,7 @@ const page = async () => {
                                     width={400}
                                     height={280}
                                 />
-                                 {/* <Image
+                                {/* <Image
                                     className='md:h-[280px] h-[230px] w-full object-cover rounded-[20px]'
                                     src={BlogImage}
                                     alt='blog image'
@@ -183,14 +190,14 @@ const page = async () => {
 
                 <div>
                     <Image
-                    src={BlogPageGradientRight}
-                    alt='blog page gradient right'
-                    className='absolute top-0 right-0 z-0'
+                        src={BlogPageGradientRight}
+                        alt='blog page gradient right'
+                        className='absolute top-0 right-0 z-0'
                     />
                     <Image
-                    src={BlogPageGradientLeft}
-                    alt='blog page gradient left'
-                    className='absolute bottom-0 left-0 z-0'
+                        src={BlogPageGradientLeft}
+                        alt='blog page gradient left'
+                        className='absolute bottom-0 left-0 z-0'
                     />
                 </div>
             </div>

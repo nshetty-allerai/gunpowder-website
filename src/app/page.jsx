@@ -1,4 +1,5 @@
 import CookiesModal from "@/components/common/CookiesModal";
+import BlogForHomePages from "@/components/UI/BlogForHomePages";
 import FeturedAndBenifts from "@/components/UI/FeturedAndBenifts";
 import HeroSection from "@/components/UI/HeroSection";
 import NeedHelpCircle from "@/components/UI/NeedHelpCircle";
@@ -31,6 +32,7 @@ export default function Home() {
           <Process/>
           <Questions/>
           <NeedHelpCircle/>
+          <BlogForHomePages/>
       </div>
    {/* <CookiesModal/> */}
    </>

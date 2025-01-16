@@ -219,6 +219,11 @@ import instagramIcon from '../../../public/svg/instagramIcon.svg'
 import linkedinSocialIcon from '../../../public/svg/linkedinSocialIcon.svg'
 import facebookSocialIcon from '../../../public/svg/facebookSocialIcon.svg'
 
+
+import homeBlog1 from '../../../public/images/mobile app design blog.png'
+import homeBlog2 from '../../../public/images/softweare devlopment blog.png'
+import homeBlog3 from '../../../public/images/Personalized Software blog.png'
+
 export {
     blackGradient,blackGradientMobile,
     Logo ,Menu ,Arrow ,HeroSectionImage ,BookedText ,Bom ,Hash ,Mobile ,
@@ -264,7 +269,8 @@ export {
 
     // blogs
     BlogImage ,ReadMoreArrow,PrevArrow ,CopyIcon,TwitterIcon ,LinkedinIcon, FacebookIcon,Blog1 ,Blog2,ArrowCross ,DemoProfile,
-    BlogPageGradientLeft,BlogPageGradientRight ,instagramIcon ,linkedinSocialIcon ,facebookSocialIcon
+    BlogPageGradientLeft,BlogPageGradientRight ,instagramIcon ,linkedinSocialIcon ,facebookSocialIcon, 
+    homeBlog1,homeBlog2,homeBlog3
 
 }
 
