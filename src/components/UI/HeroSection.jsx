@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className='flex justify-center'>
           <div className='relative'>
             <Button>Let&apos;s Talk</Button>
-            <div className='absolute md:right-[-250px] bottom-0 right-[-140px]'>
+            <div className='absolute md:right-[-230px] bottom-0 right-[-135px]'>
               <Image
                 src={BookedText}
                 alt='arrow'

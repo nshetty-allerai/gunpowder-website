@@ -71,7 +71,7 @@ const BlogForHomePages = () => {
                             <h6 className='font-semibold lg:text-2xl text-xl mt-9'>{item?.title}</h6>
                             <p className='text-base font-normal mt-2'>{item?.description.slice(0,109)}...</p>
                             <div className='flex items-center text-brand font-semibold mt-6' href='/blog/1'>
-                                <Link href={`/`}>Read post</Link>
+                                <Link href={`/blog`}>Read post</Link>
                                 <Image
                                     src={ReadMoreArrow}
                                     className='w-5 h-5'
