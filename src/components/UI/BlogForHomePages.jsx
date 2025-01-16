@@ -45,8 +45,8 @@ const BlogForHomePages = () => {
                     </div>
                 </div>
                 <div className='grid md:flex md:overflow-auto lg:grid-cols-3 grid-cols-1 gap-7 mx-8 mt-10 md:mt-11'>
-                    {data.map(() => (
-                        <div className='md:min-w-[350px] lg:w-full'>
+                    {data.map((_,index) => (
+                        <div key={index} className='md:min-w-[350px] lg:w-full'>
                             {/* <Image src={homeBlog1} alt={"homeBlog1"} className="w-full" /> */}
                             <div className='relative'>
                                 <Image
