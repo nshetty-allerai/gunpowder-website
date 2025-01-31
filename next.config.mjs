@@ -22,6 +22,11 @@ const nextConfig = {
         destination: '/cookies-policy',
         permanent: true, // This makes it a 301 redirect
       },
+      {
+        source: '/blog',
+        destination: '/',
+        permanent: true, // This makes it a 301 redirect
+      },
     ];
   },
   images: {
