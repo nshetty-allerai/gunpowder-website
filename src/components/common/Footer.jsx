@@ -101,7 +101,7 @@ const Footer = () => {
                 <div className='flex-col 2xl:flex-row 2xl:gap-4 gap-8 flex items-center justify-between'>
                     <div className='text-center'>© 2024 Gunpowder Innovations (a trading name of AllerAI Limited). All rights reserved.</div>
                     <div className='flex flex-wrap shrink-0 gap-4 justify-center items-center mt-6 md:mt-0'>
-                        <Link className='shrink-0' href="/PrivacyPolicy">Privacy Policy</Link>
+                        <Link className='shrink-0' href="/PrivacyPolicy">Privacy Policy...</Link>
                         <Link className='shrink-0' href="/TermsAndConditions">Terms & Conditions</Link>
                         <Link className='shrink-0' href="/CookiesPolicy">Cookie Policy</Link>
                         <div className='text-center shrink-0'>
