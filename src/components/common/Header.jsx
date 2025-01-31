@@ -66,7 +66,7 @@ const Header = () => {
           <Link className={pathname == '/about' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] hidden lg:block' : 'px-4 py-1 bg-transparent rounded-3xl  hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out hidden lg:block'} href='/about'>About Us</Link>
           <Link className={pathname == '/pricing' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] hidden lg:block' : 'px-4 py-1 bg-transparent rounded-3xl  hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out hidden lg:block'} href='/pricing'>Pricing</Link>
           <Link className={pathname == '/contact' ? 'px-4 py-1 rounded-3xl text-[#FF0073] bg-[#FF007342] hidden lg:block' : 'px-4 py-1 bg-transparent rounded-3xl hover:text-[#FF0073] hover:bg-[#FF007342] transition-all duration-300 ease-in-out hidden lg:block'} href='/contact'>Contact</Link>
-          <div className={`relative  hover:bg-[#FF007342] ${showProducts !== true ? 'rounded-[14px]' : 'rounded-t-[14px] bg-[#FF007342]'}`}>
+          <div className={`relative  hover:bg-[#FF007342] ${showProducts !== true ? 'rounded-3xl' : 'rounded-3xl bg-[#FF007342]'}`}>
             <div onClick={() => setShowProducts((prev) => !prev)} className='px-4 py-1 rounded-3xl hover:text-[#FF0073] transition-all duration-300 ease-in-out hidden lg:flex items-center gap-2 cursor-pointer'>
               <span className='text-lg'>Products</span>
               <span className={`${showProducts == true ? 'rotate-180 transition-all duration-300 ease-in-out' : 'rotate-0 transition-all duration-300 ease-in-out'}`}>
