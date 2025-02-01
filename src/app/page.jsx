@@ -32,7 +32,7 @@ export default function Home() {
           <Process/>
           <Questions/>
           <NeedHelpCircle/>
-          <BlogForHomePages/>
+          {/* <BlogForHomePages/> */}
       </div>
    {/* <CookiesModal/> */}
    </>
